@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"boyangli.com","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false,"b2t":false,"scrollpercent":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Today, I am going to deeply analysis the multi-rotor attitude control code in PX4.On one hand, I need to know the full process about the flight controller. Files List路径：Firmware&#x2F;src&#x2F;modules&#x2F;mc_att_con">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PX4 Attitude Control">
+<meta property="og:url" content="http://boyangli.com/2017/04/12/PX4-Attitude-Control/index.html">
+<meta property="og:site_name" content="Boyang&#39;s Website">
+<meta property="og:description" content="Today, I am going to deeply analysis the multi-rotor attitude control code in PX4.On one hand, I need to know the full process about the flight controller. Files List路径：Firmware&#x2F;src&#x2F;modules&#x2F;mc_att_con">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-04-12T15:48:52.000Z">
+<meta property="article:modified_time" content="2020-03-31T15:39:51.143Z">
+<meta property="article:author" content="Boyang Li">
+<meta property="article:tag" content="PX4">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://boyangli.com/2017/04/12/PX4-Attitude-Control/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>PX4 Attitude Control | Boyang's Website</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Boyang's Website</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Boyang's Website</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives<span class="badge">10</span></a>
+
+  </li>
+        <li class="menu-item menu-item-project">
+
+    <a href="/categories/project/" rel="section"><i class="fa fa-fw fa-flask"></i>project</a>
+
+  </li>
+        <li class="menu-item menu-item-travel">
+
+    <a href="/categories/travel/" rel="section"><i class="fa fa-fw fa-map-marker"></i>travel</a>
+
+  </li>
+        <li class="menu-item menu-item-reading">
+
+    <a href="/categories/reading/" rel="section"><i class="fa fa-fw fa-book"></i>reading</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://boyangli.com/2017/04/12/PX4-Attitude-Control/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar1.png">
+      <meta itemprop="name" content="Boyang Li">
+      <meta itemprop="description" content="Stay Hungry, Stay Foolish">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Boyang's Website">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PX4 Attitude Control
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2017-04-12 16:48:52" itemprop="dateCreated datePublished" datetime="2017-04-12T16:48:52+01:00">2017-04-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-03-31 16:39:51" itemprop="dateModified" datetime="2020-03-31T16:39:51+01:00">2020-03-31</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/reading/" itemprop="url" rel="index"><span itemprop="name">reading</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Today, I am going to deeply analysis the multi-rotor attitude control code in PX4.<br>On one hand, I need to know the full process about the flight controller.</p>
+<h1 id="Files-List"><a href="#Files-List" class="headerlink" title="Files List"></a>Files List</h1><p>路径：Firmware/src/modules/mc_att_control/</p>
+<p>文件：1. CMakeLists.txt, 2. mc_att_control_main.cpp, 3. mc_att_control_params.c</p>
+<a id="more"></a>
+
+<h2 id="CMakeLists-txt-（给Cmake提供信息？）"><a href="#CMakeLists-txt-（给Cmake提供信息？）" class="headerlink" title="CMakeLists.txt （给Cmake提供信息？）"></a>CMakeLists.txt （给Cmake提供信息？）</h2><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">px4_add_module(</span></span><br><span class="line">	<span class="attr">MODULE</span> <span class="string">modules__mc_att_control</span></span><br><span class="line">	<span class="attr">MAIN</span> <span class="string">mc_att_control</span></span><br><span class="line">	<span class="attr">STACK_MAIN</span> <span class="string">1200</span></span><br><span class="line">	<span class="attr">STACK_MAX</span> <span class="string">3500</span></span><br><span class="line">	<span class="attr">COMPILE_FLAGS</span></span><br><span class="line">	<span class="attr">SRCS</span></span><br><span class="line">		<span class="attr">mc_att_control_main.cpp</span></span><br><span class="line">	<span class="attr">DEPENDS</span></span><br><span class="line">		<span class="attr">platforms__common</span></span><br><span class="line">	<span class="attr">)</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="mc-att-control-params-c-（姿态控制所需要的所有参数）"><a href="#mc-att-control-params-c-（姿态控制所需要的所有参数）" class="headerlink" title="mc_att_control_params.c （姿态控制所需要的所有参数）"></a>mc_att_control_params.c （姿态控制所需要的所有参数）</h2><table>
+<thead>
+<tr>
+<th>Axis</th>
+<th>Parameter Name</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Roll/Pitch</td>
+<td>time constant</td>
+<td>(MC_ROLL_TC, 0.2f)</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>P gain</td>
+<td>(MC_ROLL_P, 6.5f)</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>rate P gain</td>
+<td>(MC_ROLLRATE_P, 0.15f)</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>rate I gain</td>
+<td>(MC_ROLLRATE_I, 0.05f)</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>rate integrator limit</td>
+<td>(MC_RR_INT_LIM, 0.30f)</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>rate D gain</td>
+<td>(MC_ROLLRATE_D, 0.003f)</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>rate feedforward</td>
+<td>(MC_ROLLRATE_FF, 0.0f)</td>
+</tr>
+<tr>
+<td>Yaw</td>
+<td>feed forward</td>
+<td>(MC_YAW_FF, 0.5f)</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Roll/Pitch/Yaw</td>
+<td>Max rate in automous mode</td>
+<td>(MC_ROLLRATE_MAX, 220.0/220/200f)</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Battery power level scaler</td>
+<td>boolean</td>
+<td>(MC_BAT_SCALE_EN, 0)</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>TPA P/I/D Breakpoint</td>
+<td>Throttle PID Attenuation (TPA)</td>
+<td>(MC_TPA_BREAK_P, 1.0f)</td>
+</tr>
+<tr>
+<td>TPA Rate P/I/D</td>
+<td>Throttle PID Attenuation (TPA)</td>
+<td>(MC_TPA_RATE_P, 0.0f)</td>
+</tr>
+</tbody></table>
+<h2 id="mc-att-control-main-cpp-（姿态控制控制率）"><a href="#mc-att-control-main-cpp-（姿态控制控制率）" class="headerlink" title="mc_att_control_main.cpp （姿态控制控制率）"></a>mc_att_control_main.cpp （姿态控制控制率）</h2><h3 id="Key-Points"><a href="#Key-Points" class="headerlink" title="Key Points"></a>Key Points</h3><ul>
+<li>控制率主要有两环，姿态（角度）误差用P控制，角速率误差用PD控制</li>
+<li>Yaw响应比Roll/Pitch慢</li>
+<li>对于小误差控制器控制旋翼机以最短推力矢量方向旋转，再独立旋转Yaw,因此实际旋转轴并不固定</li>
+<li>对于大误差控制器使旋翼机沿固定轴旋转</li>
+<li>这两种方式根据角度误差的比重无缝融合</li>
+<li>当推力矢量方向接近水平（pi/2）时，考虑到奇点Yaw目标会失效</li>
+<li>控制器不依赖欧拉角，欧拉角生成只是为了便于理解和记录</li>
+<li>当旋转矩阵目标点无效时，会从欧拉角产生，这样可以和老的位置控制器兼容</li>
+</ul>
+<h3 id="include-lt-gt"><a href="#include-lt-gt" class="headerlink" title="#include&lt;&gt;"></a>#include&lt;&gt;</h3><ul>
+<li>drivers</li>
+<li>lib</li>
+<li>px4</li>
+<li>systemlib</li>
+<li>uORB</li>
+</ul>
+<h3 id="App-definition"><a href="#App-definition" class="headerlink" title="App definition"></a>App definition</h3><ul>
+<li>Multicopter attitude control app start / stop handling function<br><code>extern &quot;C&quot; __EXPORT int mc_att_control_main(int argc, char *argv[]);</code><br><u>(extern “C” {}: c,c++ 混合编程时的一个处理方法）</u></li>
+</ul>
+<h3 id="define"><a href="#define" class="headerlink" title="#define"></a>#define</h3><p>又定义了一些似乎重复和新的变量</p>
+<h3 id="class-MulticopterAttitudeControl"><a href="#class-MulticopterAttitudeControl" class="headerlink" title="class MulticopterAttitudeControl"></a>class MulticopterAttitudeControl</h3><p>public:</p>
+<pre><code>MulticopterAttitudeControl(); 建立
+~MulticopterAttitudeControl();销毁
+int        start();开始</code></pre><p>private:</p>
+<ul>
+<li>一堆int</li>
+<li>一堆struct</li>
+<li>一个Union</li>
+<li>一堆math::Vector</li>
+<li>一个大结构体 _params_handles 基本上是params 文件里定义的参数，又定义一遍</li>
+<li>同上 _params 感觉跟上面有些重复，但是类型不一样</li>
+<li>一堆int,void的函数</li>
+</ul>
+<h3 id="namespace-mc-att-control"><a href="#namespace-mc-att-control" class="headerlink" title="namespace mc_att_control"></a>namespace mc_att_control</h3><p><code>namespace mc_att_control
+{
+    MulticopterAttitudeControl    *g_control;
+}</code></p>
+<h3 id="建立MulticopterAttitudeControl-MulticopterAttitudeControl"><a href="#建立MulticopterAttitudeControl-MulticopterAttitudeControl" class="headerlink" title="建立MulticopterAttitudeControl::MulticopterAttitudeControl()"></a>建立MulticopterAttitudeControl::MulticopterAttitudeControl()</h3><h3 id="销毁MulticopterAttitudeControl-MulticopterAttitudeControl"><a href="#销毁MulticopterAttitudeControl-MulticopterAttitudeControl" class="headerlink" title="销毁MulticopterAttitudeControl::~MulticopterAttitudeControl()"></a>销毁MulticopterAttitudeControl::~MulticopterAttitudeControl()</h3><h3 id="参数更新-int-MulticopterAttitudeControl-parameters-update"><a href="#参数更新-int-MulticopterAttitudeControl-parameters-update" class="headerlink" title="参数更新 int MulticopterAttitudeControl::parameters_update()"></a>参数更新 int MulticopterAttitudeControl::parameters_update()</h3><h3 id="一堆各种poll"><a href="#一堆各种poll" class="headerlink" title="一堆各种poll"></a>一堆各种poll</h3><p>参数Poll,飞行器模式poll,手动poll,姿态目标点poll,rate目标点poll,arm状态poll,<br>飞行器状态poll,电机极限poll,电池状态poll,</p>
+<h3 id="姿态控制-control-attitude"><a href="#姿态控制-control-attitude" class="headerlink" title="姿态控制 control_attitude"></a><font color=red>姿态控制 control_attitude</font></h3><h3 id="油门-Throttle-PID-attenuation"><a href="#油门-Throttle-PID-attenuation" class="headerlink" title="油门 Throttle PID attenuation"></a>油门 Throttle PID attenuation</h3><h3 id="姿态rate控制-control-attitude-rates"><a href="#姿态rate控制-control-attitude-rates" class="headerlink" title="姿态rate控制 control_attitude_rates"></a><font color=red>姿态rate控制 control_attitude_rates</font></h3><h3 id="task-main"><a href="#task-main" class="headerlink" title="task_main"></a>task_main</h3><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><h3 id="mc-att-control-main"><a href="#mc-att-control-main" class="headerlink" title="mc_att_control_main"></a>mc_att_control_main</h3>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/PX4/" rel="tag"># PX4</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/04/04/Search-and-Rescure-UAV/" rel="prev" title="Search and Rescure UAV System">
+      <i class="fa fa-chevron-left"></i> Search and Rescure UAV System
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/03/16/Brisbane_Australia/" rel="next" title="Brisbane, AU">
+      Brisbane, AU <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Files-List"><span class="nav-number">1.</span> <span class="nav-text">Files List</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CMakeLists-txt-（给Cmake提供信息？）"><span class="nav-number">1.1.</span> <span class="nav-text">CMakeLists.txt （给Cmake提供信息？）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mc-att-control-params-c-（姿态控制所需要的所有参数）"><span class="nav-number">1.2.</span> <span class="nav-text">mc_att_control_params.c （姿态控制所需要的所有参数）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mc-att-control-main-cpp-（姿态控制控制率）"><span class="nav-number">1.3.</span> <span class="nav-text">mc_att_control_main.cpp （姿态控制控制率）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Key-Points"><span class="nav-number">1.3.1.</span> <span class="nav-text">Key Points</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#include-lt-gt"><span class="nav-number">1.3.2.</span> <span class="nav-text">#include&lt;&gt;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#App-definition"><span class="nav-number">1.3.3.</span> <span class="nav-text">App definition</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#define"><span class="nav-number">1.3.4.</span> <span class="nav-text">#define</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class-MulticopterAttitudeControl"><span class="nav-number">1.3.5.</span> <span class="nav-text">class MulticopterAttitudeControl</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#namespace-mc-att-control"><span class="nav-number">1.3.6.</span> <span class="nav-text">namespace mc_att_control</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#建立MulticopterAttitudeControl-MulticopterAttitudeControl"><span class="nav-number">1.3.7.</span> <span class="nav-text">建立MulticopterAttitudeControl::MulticopterAttitudeControl()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#销毁MulticopterAttitudeControl-MulticopterAttitudeControl"><span class="nav-number">1.3.8.</span> <span class="nav-text">销毁MulticopterAttitudeControl::~MulticopterAttitudeControl()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数更新-int-MulticopterAttitudeControl-parameters-update"><span class="nav-number">1.3.9.</span> <span class="nav-text">参数更新 int MulticopterAttitudeControl::parameters_update()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一堆各种poll"><span class="nav-number">1.3.10.</span> <span class="nav-text">一堆各种poll</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#姿态控制-control-attitude"><span class="nav-number">1.3.11.</span> <span class="nav-text">姿态控制 control_attitude</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#油门-Throttle-PID-attenuation"><span class="nav-number">1.3.12.</span> <span class="nav-text">油门 Throttle PID attenuation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#姿态rate控制-control-attitude-rates"><span class="nav-number">1.3.13.</span> <span class="nav-text">姿态rate控制 control_attitude_rates</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#task-main"><span class="nav-number">1.3.14.</span> <span class="nav-text">task_main</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#start"><span class="nav-number">1.3.15.</span> <span class="nav-text">start</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mc-att-control-main"><span class="nav-number">1.3.16.</span> <span class="nav-text">mc_att_control_main</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Boyang Li"
+      src="/images/avatar1.png">
+  <p class="site-author-name" itemprop="name">Boyang Li</p>
+  <div class="site-description" itemprop="description">Stay Hungry, Stay Foolish</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/boyang--li" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;boyang--li" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/by.li@outlook.com" title="E-Mail → by.li@outlook.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.linkedin.com/in/boyang-li-10398480" title="Linkedin → https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;boyang-li-10398480" rel="noopener" target="_blank"><i class="fa fa-fw fa-linkedin"></i>Linkedin</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.mypolyuweb.hk/cywen/" title="http:&#x2F;&#x2F;www.mypolyuweb.hk&#x2F;cywen&#x2F;" rel="noopener" target="_blank">PolyU HTML Group</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://softsystemsgroup.com/" title="https:&#x2F;&#x2F;softsystemsgroup.com&#x2F;" rel="noopener" target="_blank">Soft Systems Group</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2015 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Boyang Li</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

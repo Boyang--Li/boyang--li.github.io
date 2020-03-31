@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Boyang&#39;s Website</title>
+  
+  <subtitle>Boyang&#39;s Website</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://boyangli.com/"/>
+  <updated>2019-07-17T20:24:56.000Z</updated>
+  <id>http://boyangli.com/</id>
+  
+  <author>
+    <name>Boyang Li</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VTOL Tailsitter UAV</title>
+    <link href="http://boyangli.com/2018/10/14/VTOL-Tailsitter/"/>
+    <id>http://boyangli.com/2018/10/14/VTOL-Tailsitter/</id>
+    <published>2018-10-14T20:24:56.000Z</published>
+    <updated>2019-07-17T20:24:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/kYevywwGgjQ" frameborder="0" allowfullscreen></iframe><a id="more"></a><p>This is the main topic for my PhD thesis. The aim of this project is to design and optimize a VTOL tail-sitter UAV. The main work can be divided into design, model and control parts.</p><img src="https://" alt="" style="width:100%" /><h2 id="Design"><a href="#Design" class="headerlink" title="Design"></a>Design</h2><p>Design is an important aspect.</p><h2 id="Modeling"><a href="#Modeling" class="headerlink" title="Modeling"></a>Modeling</h2><h2 id="Control"><a href="#Control" class="headerlink" title="Control"></a>Control</h2><hr />]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Video&quot;&gt;&lt;a href=&quot;#Video&quot; class=&quot;headerlink&quot; title=&quot;Video&quot;&gt;&lt;/a&gt;Video&lt;/h2&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/kYevywwGgjQ&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Thesis" scheme="http://boyangli.com/tags/Thesis/"/>
+    
+      <category term="PhD" scheme="http://boyangli.com/tags/PhD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Brisbane, AU</title>
+    <link href="http://boyangli.com/2018/03/16/Brisbane_Australia/"/>
+    <id>http://boyangli.com/2018/03/16/Brisbane_Australia/</id>
+    <published>2018-03-16T15:31:35.000Z</published>
+    <updated>2019-08-11T14:31:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>This is the first time I arrive the South Planet.</p><a id="more"></a><p>For the first trip, I visited Gold Coast and Brisbane in Queensland, Australia. Brisbane is the third largest city in Australia with a beautiful river. The city is not large compared with Asia cities. As my wife is working in a small town called Dalby which is about 200 km to the west of Brisbane. After my flight touch down at Gold Coast airport, I got my rented car and directly drive to Dalby. I takes me about 2.5 hour to arrive there. The high speed road in Australia is quite good with speed limit of 100 km/s. </p><p>I stayed at Dalby for one night and then drive to Brisbane with Vera. Brisbane is a quite nice city for me. It is not too crowed but has all the necessary service of a medium city. After stayed at Brisbane for 2 night, we headed to Gold Coast, which is another beautiful city quite near to Brisbane. Gold Coast really has a long coast with fine sands. Vera’s birthday was celebrated at a Italian restaurant. The menu was quite hard to understand for us, so we just ordered some common food such as spaghetti and pizza. </p><p>We stayed at a hostal near to the airport. Most of the roommates seems to be surfing lovers. I went back to Hong Kong the second day and Vera also went back to Dably can continue to work after a 4 days holiday. </p><hr />]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;This is the first time I arrive the South Planet.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="travel" scheme="http://boyangli.com/categories/travel/"/>
+    
+    
+      <category term="travel" scheme="http://boyangli.com/tags/travel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PX4 Attitude Control</title>
+    <link href="http://boyangli.com/2017/04/12/PX4-Attitude-Control/"/>
+    <id>http://boyangli.com/2017/04/12/PX4-Attitude-Control/</id>
+    <published>2017-04-12T15:48:52.000Z</published>
+    <updated>2020-03-31T15:39:51.143Z</updated>
+    
+    <content type="html"><![CDATA[<p>Today, I am going to deeply analysis the multi-rotor attitude control code in PX4.<br>On one hand, I need to know the full process about the flight controller.</p><h1 id="Files-List"><a href="#Files-List" class="headerlink" title="Files List"></a>Files List</h1><p>路径：Firmware/src/modules/mc_att_control/</p><p>文件：1. CMakeLists.txt, 2. mc_att_control_main.cpp, 3. mc_att_control_params.c</p><a id="more"></a><h2 id="CMakeLists-txt-（给Cmake提供信息？）"><a href="#CMakeLists-txt-（给Cmake提供信息？）" class="headerlink" title="CMakeLists.txt （给Cmake提供信息？）"></a>CMakeLists.txt （给Cmake提供信息？）</h2><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">px4_add_module(</span></span><br><span class="line"><span class="attr">MODULE</span> <span class="string">modules__mc_att_control</span></span><br><span class="line"><span class="attr">MAIN</span> <span class="string">mc_att_control</span></span><br><span class="line"><span class="attr">STACK_MAIN</span> <span class="string">1200</span></span><br><span class="line"><span class="attr">STACK_MAX</span> <span class="string">3500</span></span><br><span class="line"><span class="attr">COMPILE_FLAGS</span></span><br><span class="line"><span class="attr">SRCS</span></span><br><span class="line"><span class="attr">mc_att_control_main.cpp</span></span><br><span class="line"><span class="attr">DEPENDS</span></span><br><span class="line"><span class="attr">platforms__common</span></span><br><span class="line"><span class="attr">)</span></span><br></pre></td></tr></table></figure><h2 id="mc-att-control-params-c-（姿态控制所需要的所有参数）"><a href="#mc-att-control-params-c-（姿态控制所需要的所有参数）" class="headerlink" title="mc_att_control_params.c （姿态控制所需要的所有参数）"></a>mc_att_control_params.c （姿态控制所需要的所有参数）</h2><table><thead><tr><th>Axis</th><th>Parameter Name</th><th>Example</th></tr></thead><tbody><tr><td>Roll/Pitch</td><td>time constant</td><td>(MC_ROLL_TC, 0.2f)</td></tr><tr><td>Roll/Pitch/Yaw</td><td>P gain</td><td>(MC_ROLL_P, 6.5f)</td></tr><tr><td>Roll/Pitch/Yaw</td><td>rate P gain</td><td>(MC_ROLLRATE_P, 0.15f)</td></tr><tr><td>Roll/Pitch/Yaw</td><td>rate I gain</td><td>(MC_ROLLRATE_I, 0.05f)</td></tr><tr><td>Roll/Pitch/Yaw</td><td>rate integrator limit</td><td>(MC_RR_INT_LIM, 0.30f)</td></tr><tr><td>Roll/Pitch/Yaw</td><td>rate D gain</td><td>(MC_ROLLRATE_D, 0.003f)</td></tr><tr><td>Roll/Pitch/Yaw</td><td>rate feedforward</td><td>(MC_ROLLRATE_FF, 0.0f)</td></tr><tr><td>Yaw</td><td>feed forward</td><td>(MC_YAW_FF, 0.5f)</td></tr><tr><td>-</td><td>-</td><td>-</td></tr><tr><td>Roll/Pitch/Yaw</td><td>Max rate in automous mode</td><td>(MC_ROLLRATE_MAX, 220.0/220/200f)</td></tr><tr><td>-</td><td>-</td><td>-</td></tr><tr><td>Battery power level scaler</td><td>boolean</td><td>(MC_BAT_SCALE_EN, 0)</td></tr><tr><td>-</td><td>-</td><td>-</td></tr><tr><td>TPA P/I/D Breakpoint</td><td>Throttle PID Attenuation (TPA)</td><td>(MC_TPA_BREAK_P, 1.0f)</td></tr><tr><td>TPA Rate P/I/D</td><td>Throttle PID Attenuation (TPA)</td><td>(MC_TPA_RATE_P, 0.0f)</td></tr></tbody></table><h2 id="mc-att-control-main-cpp-（姿态控制控制率）"><a href="#mc-att-control-main-cpp-（姿态控制控制率）" class="headerlink" title="mc_att_control_main.cpp （姿态控制控制率）"></a>mc_att_control_main.cpp （姿态控制控制率）</h2><h3 id="Key-Points"><a href="#Key-Points" class="headerlink" title="Key Points"></a>Key Points</h3><ul><li>控制率主要有两环，姿态（角度）误差用P控制，角速率误差用PD控制</li><li>Yaw响应比Roll/Pitch慢</li><li>对于小误差控制器控制旋翼机以最短推力矢量方向旋转，再独立旋转Yaw,因此实际旋转轴并不固定</li><li>对于大误差控制器使旋翼机沿固定轴旋转</li><li>这两种方式根据角度误差的比重无缝融合</li><li>当推力矢量方向接近水平（pi/2）时，考虑到奇点Yaw目标会失效</li><li>控制器不依赖欧拉角，欧拉角生成只是为了便于理解和记录</li><li>当旋转矩阵目标点无效时，会从欧拉角产生，这样可以和老的位置控制器兼容</li></ul><h3 id="include-lt-gt"><a href="#include-lt-gt" class="headerlink" title="#include&lt;&gt;"></a>#include&lt;&gt;</h3><ul><li>drivers</li><li>lib</li><li>px4</li><li>systemlib</li><li>uORB</li></ul><h3 id="App-definition"><a href="#App-definition" class="headerlink" title="App definition"></a>App definition</h3><ul><li>Multicopter attitude control app start / stop handling function<br><code>extern &quot;C&quot; __EXPORT int mc_att_control_main(int argc, char *argv[]);</code><br><u>(extern “C” {}: c,c++ 混合编程时的一个处理方法）</u></li></ul><h3 id="define"><a href="#define" class="headerlink" title="#define"></a>#define</h3><p>又定义了一些似乎重复和新的变量</p><h3 id="class-MulticopterAttitudeControl"><a href="#class-MulticopterAttitudeControl" class="headerlink" title="class MulticopterAttitudeControl"></a>class MulticopterAttitudeControl</h3><p>public:</p><pre><code>MulticopterAttitudeControl(); 建立~MulticopterAttitudeControl();销毁int        start();开始</code></pre><p>private:</p><ul><li>一堆int</li><li>一堆struct</li><li>一个Union</li><li>一堆math::Vector</li><li>一个大结构体 _params_handles 基本上是params 文件里定义的参数，又定义一遍</li><li>同上 _params 感觉跟上面有些重复，但是类型不一样</li><li>一堆int,void的函数</li></ul><h3 id="namespace-mc-att-control"><a href="#namespace-mc-att-control" class="headerlink" title="namespace mc_att_control"></a>namespace mc_att_control</h3><p><code>namespace mc_att_control{    MulticopterAttitudeControl    *g_control;}</code></p><h3 id="建立MulticopterAttitudeControl-MulticopterAttitudeControl"><a href="#建立MulticopterAttitudeControl-MulticopterAttitudeControl" class="headerlink" title="建立MulticopterAttitudeControl::MulticopterAttitudeControl()"></a>建立MulticopterAttitudeControl::MulticopterAttitudeControl()</h3><h3 id="销毁MulticopterAttitudeControl-MulticopterAttitudeControl"><a href="#销毁MulticopterAttitudeControl-MulticopterAttitudeControl" class="headerlink" title="销毁MulticopterAttitudeControl::~MulticopterAttitudeControl()"></a>销毁MulticopterAttitudeControl::~MulticopterAttitudeControl()</h3><h3 id="参数更新-int-MulticopterAttitudeControl-parameters-update"><a href="#参数更新-int-MulticopterAttitudeControl-parameters-update" class="headerlink" title="参数更新 int MulticopterAttitudeControl::parameters_update()"></a>参数更新 int MulticopterAttitudeControl::parameters_update()</h3><h3 id="一堆各种poll"><a href="#一堆各种poll" class="headerlink" title="一堆各种poll"></a>一堆各种poll</h3><p>参数Poll,飞行器模式poll,手动poll,姿态目标点poll,rate目标点poll,arm状态poll,<br>飞行器状态poll,电机极限poll,电池状态poll,</p><h3 id="姿态控制-control-attitude"><a href="#姿态控制-control-attitude" class="headerlink" title="姿态控制 control_attitude"></a><font color=red>姿态控制 control_attitude</font></h3><h3 id="油门-Throttle-PID-attenuation"><a href="#油门-Throttle-PID-attenuation" class="headerlink" title="油门 Throttle PID attenuation"></a>油门 Throttle PID attenuation</h3><h3 id="姿态rate控制-control-attitude-rates"><a href="#姿态rate控制-control-attitude-rates" class="headerlink" title="姿态rate控制 control_attitude_rates"></a><font color=red>姿态rate控制 control_attitude_rates</font></h3><h3 id="task-main"><a href="#task-main" class="headerlink" title="task_main"></a>task_main</h3><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><h3 id="mc-att-control-main"><a href="#mc-att-control-main" class="headerlink" title="mc_att_control_main"></a>mc_att_control_main</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Today, I am going to deeply analysis the multi-rotor attitude control code in PX4.&lt;br&gt;On one hand, I need to know the full process about the flight controller.&lt;/p&gt;
+&lt;h1 id=&quot;Files-List&quot;&gt;&lt;a href=&quot;#Files-List&quot; class=&quot;headerlink&quot; title=&quot;Files List&quot;&gt;&lt;/a&gt;Files List&lt;/h1&gt;&lt;p&gt;路径：Firmware/src/modules/mc_att_control/&lt;/p&gt;
+&lt;p&gt;文件：1. CMakeLists.txt, 2. mc_att_control_main.cpp, 3. mc_att_control_params.c&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="reading" scheme="http://boyangli.com/categories/reading/"/>
+    
+    
+      <category term="PX4" scheme="http://boyangli.com/tags/PX4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Search and Rescure UAV System</title>
+    <link href="http://boyangli.com/2016/04/04/Search-and-Rescure-UAV/"/>
+    <id>http://boyangli.com/2016/04/04/Search-and-Rescure-UAV/</id>
+    <published>2016-04-04T12:32:31.000Z</published>
+    <updated>2018-04-04T12:32:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>We have developed a fixed-wing UAV system to take part in the Search and Rescure category of Taiwan UAV competition. The video is a good summary for this work and the competition.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZK2kLsNICog?list=PLExhUFMJ8R20t3anCNDYLnFilz3u3lc0S" frameborder="0" allowfullscreen></iframe><p>If you want to get more information, you can continue to read.</p><a id="more"></a><h2 id="System-Configuration"><a href="#System-Configuration" class="headerlink" title="System Configuration"></a>System Configuration</h2><p>The basic airfram of this UAV system is a commercial EPO model called Talon.</p><img src="/images/strike2.png" width = "300" height = "200" alt="title" align=center /><p>We added many subsystems to the UAV platform to enable the autonomous targets search.<br><img src="/images/strike1.png" width = "300" height = "200" alt="title" align=center /></p><p>The airspeed sensor is mounted on a pretty 3D-printing sit.<br><img src="/images/strike1.png" width = "50%" height = "50%" alt="title" align=center /></p><p>The Automatic Antana Tracker(AAT) is used to extent the communication range of the 433MHz temelemtry system.<br><img src="/images/strike4.png" width = "50%" height = "50%" alt="title" align=center /></p><p>This figure shows the navigation turning results in Yuan Lung test site.<br><img src="/images/strike6.png" width = "50%" height = "50%" alt="title" align=center /></p><p>We mounted two camaras on the UAV. The main camera is the GoPro with two-axis gimbal.<br><img src="/images/strike7.png" width = "50%" height = "50%" alt="title" align=center /></p><p>This is the map we built for the flight site </p><img src="/images/strike9.png" width = "400" height = "600" alt="title" align=center /><h2 id="Propolsion-System"><a href="#Propolsion-System" class="headerlink" title="Propolsion System"></a>Propolsion System</h2><h2 id="Image-System"><a href="#Image-System" class="headerlink" title="Image System"></a>Image System</h2><h2 id="Flight-Tests-and-Results"><a href="#Flight-Tests-and-Results" class="headerlink" title="Flight Tests and Results"></a>Flight Tests and Results</h2><h2 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h2><p>Sun, J.; Li, B.; Jiang, Y.; Wen, C.-Y.    A Camera-Based Target Detection and Positioning UAV System for Search and Rescue (SAR) Purposes. Sensors 2016, 16, 1778. <i class="fa fa-download"></i> <a href="http://www.mdpi.com/1424-8220/16/11/1778/pdf" target="_blank" rel="noopener">Download</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;We have developed a fixed-wing UAV system to take part in the Search and Rescure category of Taiwan UAV competition. The video is a good summary for this work and the competition.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/ZK2kLsNICog?list=PLExhUFMJ8R20t3anCNDYLnFilz3u3lc0S&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;If you want to get more information, you can continue to read.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Competition" scheme="http://boyangli.com/tags/Competition/"/>
+    
+      <category term="PhD" scheme="http://boyangli.com/tags/PhD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UAV Communication Relay System</title>
+    <link href="http://boyangli.com/2016/03/04/UAV-Communication-Relay-System/"/>
+    <id>http://boyangli.com/2016/03/04/UAV-Communication-Relay-System/</id>
+    <published>2016-03-04T13:33:15.000Z</published>
+    <updated>2018-03-04T13:33:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="PolyU-Relay"><a href="#PolyU-Relay" class="headerlink" title="PolyU-Relay"></a>PolyU-Relay</h2><p>This is a quick summary to the working flow of the system.</p><iframe width="560" height="315" src="https://www.youtube.com/embed/HxN0oafNmzw" frameborder="0" allowfullscreen></iframe><a id="more"></a><h2 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h2><p>Li, B.; Jiang, Y.; Sun, J.; Cai, L.; Wen, C.-Y.    Development and Testing of a Two-UAV Communication Relay System. Sensors 2016, 16, 1696. <i class="fa fa-download"></i> <a href="http://www.mdpi.com/1424-8220/16/10/1696/pdf" target="_blank" rel="noopener">Download</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;PolyU-Relay&quot;&gt;&lt;a href=&quot;#PolyU-Relay&quot; class=&quot;headerlink&quot; title=&quot;PolyU-Relay&quot;&gt;&lt;/a&gt;PolyU-Relay&lt;/h2&gt;&lt;p&gt;This is a quick summary to the working flow of the system.&lt;/p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/HxN0oafNmzw&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Competition" scheme="http://boyangli.com/tags/Competition/"/>
+    
+      <category term="PhD" scheme="http://boyangli.com/tags/PhD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QuadPlane UAV</title>
+    <link href="http://boyangli.com/2016/03/04/QuadPlane-UAV/"/>
+    <id>http://boyangli.com/2016/03/04/QuadPlane-UAV/</id>
+    <published>2016-03-04T13:31:21.000Z</published>
+    <updated>2018-03-04T13:31:21.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Master" scheme="http://boyangli.com/tags/Master/"/>
+    
+      <category term="Intern" scheme="http://boyangli.com/tags/Intern/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Flapping-Wing MAV</title>
+    <link href="http://boyangli.com/2015/03/04/Flapping-wing-MAV/"/>
+    <id>http://boyangli.com/2015/03/04/Flapping-wing-MAV/</id>
+    <published>2015-03-04T13:31:45.000Z</published>
+    <updated>2018-03-04T13:31:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>The flapping-wing micro air vehicle is my project during the master’s study. Our research group in NPU built different kinds for small flying vehicles including flapping-wing and fixed-wing MAV. The flapping-wing MAV is our focused topic for more than 10 years. Here is a video to introduce our flapping-wing MAV.</p><iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=o0130va23y4&tiny=0&auto=0" allowfullscreen></iframe>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;The flapping-wing micro air vehicle is my project during the master’s study. Our research group in NPU built different kinds for small fl
+      
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Master" scheme="http://boyangli.com/tags/Master/"/>
+    
+      <category term="Thesis" scheme="http://boyangli.com/tags/Thesis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dancing Robot</title>
+    <link href="http://boyangli.com/2011/03/04/Dancing-Robot/"/>
+    <id>http://boyangli.com/2011/03/04/Dancing-Robot/</id>
+    <published>2011-03-04T13:28:57.000Z</published>
+    <updated>2018-03-04T13:28:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>The goal of the competition is to build a robot which can dance with music. </p><a id="more"></a><p>The music is pre-prepared so the actions of the robot is fixed. This is the second project I was involved after the smart racing car. Similar to all the robotic system, the development of dancing robots also including three parts, which are mechanical design, electronic design, and finally software design. The mechanical design part provide every team a chance to define their own dancing robot. The idea of our team came from a member Qi. He would like to design a robot which could be transformed between a hand shape and a dog shape. </p><p>The robot in the hand shape is shown here<br>Hand:<br><img src="/images/robot2.jpg" alt="hand"></p><p>The robot in the dog shape is shown here<br> Dog:<br><img src="/images/robot3.jpg" alt="Dog"></p><p>Besides to the mechanical design, we also need to design the PCB board for the system. Luckily, as our team has participated in this competition for many years, we have quite stable PCB board to power and drive up to 24 servos. But at that time, all the servos we used are analog servos which are not precise enough for some high challenge motions. To upgrade to digital servos, all the PCB and software should be upgraded. For this time of competition, we did not make such large upgrade. All the upgrade was made one year later.</p><p>Besides to dancing robot, our team also participated into search and rescue robot competition. It is still a quite challenge mission at the year of 2011. The ground robot will enter an unknown environment and conduct SLAM mission. Although the vehicle could be operated remotely by WiFi network, it still need to finish some quite hard tasks such as clime stairs. </p><p><img src="/images/robot4.jpg" alt="tank"></p><p>After nearly a week of competition, we have won many prizes in both dancing and search/rescue robot group. This is my first time to take part in a national competition and I found it quite challenge but interesting. I need to finish regular courses and homework on time, and still need to spent extra time on these competitions. But the hand-on work like this really arouse my interests as an engineering student. These competitions provide us with good opportunity to build some real machines which may help to solve some practical problems in the future.<br><img src="/images/dance1.jpg" alt="Team"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;The goal of the competition is to build a robot which can dance with music. &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Undergraduate" scheme="http://boyangli.com/tags/Undergraduate/"/>
+    
+      <category term="Competition" scheme="http://boyangli.com/tags/Competition/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Smart Car</title>
+    <link href="http://boyangli.com/2010/03/04/Smart-Car/"/>
+    <id>http://boyangli.com/2010/03/04/Smart-Car/</id>
+    <published>2010-03-04T13:27:35.000Z</published>
+    <updated>2018-03-04T13:27:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><p>For this competition, the goal is to build a smart car which could follow the black curve with the camera information automatically. </p><p><img src="/images/route.jpg" alt="Route"></p><a id="more"></a><h2 id="PCB-Design"><a href="#PCB-Design" class="headerlink" title="PCB Design"></a>PCB Design</h2><p>My task is mainly the PCB design. This is a two-layer PCB with a Freescale MCU.</p><p><img src="/images/pcb.jpg" alt="PCB"></p><h2 id="Our-Car"><a href="#Our-Car" class="headerlink" title="Our Car"></a>Our Car</h2><p>We put a CCD camera in the heading of our car to detect the route.<br><img src="/images/car1.jpg" alt="Our car"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Goal&quot;&gt;&lt;a href=&quot;#Goal&quot; class=&quot;headerlink&quot; title=&quot;Goal&quot;&gt;&lt;/a&gt;Goal&lt;/h2&gt;&lt;p&gt;For this competition, the goal is to build a smart car which could follow the black curve with the camera information automatically. &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/route.jpg&quot; alt=&quot;Route&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="project" scheme="http://boyangli.com/categories/project/"/>
+    
+    
+      <category term="Undergraduate" scheme="http://boyangli.com/tags/Undergraduate/"/>
+    
+      <category term="Competition" scheme="http://boyangli.com/tags/Competition/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Template</title>
+    <link href="http://boyangli.com/2001/01/01/Template/"/>
+    <id>http://boyangli.com/2001/01/01/Template/</id>
+    <published>2001-01-01T19:25:13.000Z</published>
+    <updated>2020-03-31T15:39:51.143Z</updated>
+    
+    <content type="html"><![CDATA[<p>Hello this is the template for me to generate posts.<br>This is the first line.</p><h2 id="Title-1"><a href="#Title-1" class="headerlink" title="Title 1"></a>Title 1</h2><p>first link<br><a href="http://google.co.uk" target="_blank" rel="noopener">Link to google</a><br>continue</p><a id="more"></a><h3 id="title-2"><a href="#title-2" class="headerlink" title="title 2"></a>title 2</h3><p><strong>Bold</strong></p><p>/* 分隔线 */</p><hr /><p>/* 空行 */<br><br /></p><blockquote>引用内容</blockquote><ul><li><i class="fa fa-download"></i> 下载</li></ul><blockquote class="blockquote-center">            <p>人生乃是一面镜子，<br>从镜子里认识自己，<br>我要称之为头等大事，<br>也只是我们追求的目的！</p>          </blockquote><center>内容</center><div style="text-align:right">内容</div><p><font color="red" size="number">内容</font><br>/* 详细请查看 <a href="http://www.w3school.com.cn/tags/tag_font.asp" target="_blank" rel="noopener">http://www.w3school.com.cn/tags/tag_font.asp</a> */</p><blockquote><p>This is block quote.</p></blockquote><p><code>HTML code example</code></p><ul><li>This is list item 1</li><li>This is list item 2</li><li>This is list item 3<ul><li>This is inside list 1</li><li>This is inside list 2</li></ul></li><li>This is list item 4<ol><li>Ordered list item</li><li>Ordered list item</li><li>Ordered list item</li></ol></li><li>This is list item 5</li></ul><p class="description"></p><img src="http://twwhlspls.com/skunk-works/" alt="" style="width:100%" /><hr />]]></content>
+    
+    <summary type="html">
+    
+      template
+    
+    </summary>
+    
+    
+      <category term="travel" scheme="http://boyangli.com/tags/travel/"/>
+    
+      <category term="read" scheme="http://boyangli.com/tags/read/"/>
+    
+      <category term="life" scheme="http://boyangli.com/tags/life/"/>
+    
+  </entry>
+  
+</feed>
