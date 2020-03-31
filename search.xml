@@ -1,67 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[VTOL Tailsitter UAV]]></title>
-    <url>%2F2018%2F10%2F14%2FVTOL-Tailsitter%2F</url>
-    <content type="text"><![CDATA[Video This is the main topic for my PhD thesis. The aim of this project is to design and optimize a VTOL tail-sitter UAV. The main work can be divided into design, model and control parts. DesignDesign is an important aspect. ModelingControl]]></content>
+    <title>Flapping-Wing MAV</title>
+    <url>/2015/03/04/Flapping-wing-MAV/</url>
+    <content><![CDATA[<p>The flapping-wing micro air vehicle is my project during the master’s study. Our research group in NPU built different kinds for small flying vehicles including flapping-wing and fixed-wing MAV. The flapping-wing MAV is our focused topic for more than 10 years. Here is a video to introduce our flapping-wing MAV.</p>
+<iframe frameborder="0" width="640" height="498" src="https://v.qq.com/iframe/player.html?vid=o0130va23y4&tiny=0&auto=0" allowfullscreen></iframe>]]></content>
       <categories>
         <category>project</category>
       </categories>
       <tags>
+        <tag>Master</tag>
         <tag>Thesis</tag>
-        <tag>PhD</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Brisbane, AU]]></title>
-    <url>%2F2018%2F03%2F16%2FBrisbane_Australia%2F</url>
-    <content type="text"><![CDATA[This is the first time I arrive the South Planet. For the first trip, I visited Gold Coast and Brisbane in Queensland, Australia. Brisbane is the third largest city in Australia with a beautiful river. The city is not large compared with Asia cities. As my wife is working in a small town called Dalby which is about 200 km to the west of Brisbane. After my flight touch down at Gold Coast airport, I got my rented car and directly drive to Dalby. I takes me about 2.5 hour to arrive there. The high speed road in Australia is quite good with speed limit of 100 km/s. I stayed at Dalby for one night and then drive to Brisbane with Vera. Brisbane is a quite nice city for me. It is not too crowed but has all the necessary service of a medium city. After stayed at Brisbane for 2 night, we headed to Gold Coast, which is another beautiful city quite near to Brisbane. Gold Coast really has a long coast with fine sands. Vera’s birthday was celebrated at a Italian restaurant. The menu was quite hard to understand for us, so we just ordered some common food such as spaghetti and pizza. We stayed at a hostal near to the airport. Most of the roommates seems to be surfing lovers. I went back to Hong Kong the second day and Vera also went back to Dably can continue to work after a 4 days holiday.]]></content>
-      <categories>
-        <category>travel</category>
-      </categories>
-      <tags>
-        <tag>travel</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[PX4 Attitude Control]]></title>
-    <url>%2F2017%2F04%2F12%2FPX4-Attitude-Control%2F</url>
-    <content type="text"><![CDATA[Today, I am going to deeply analysis the multi-rotor attitude control code in PX4.On one hand, I need to know the full process about the flight controller. Files List路径：Firmware/src/modules/mc_att_control/ 文件：1. CMakeLists.txt, 2. mc_att_control_main.cpp, 3. mc_att_control_params.c CMakeLists.txt （给Cmake提供信息？）1234567891011px4_add_module( MODULE modules__mc_att_control MAIN mc_att_control STACK_MAIN 1200 STACK_MAX 3500 COMPILE_FLAGS SRCS mc_att_control_main.cpp DEPENDS platforms__common ) mc_att_control_params.c （姿态控制所需要的所有参数） Axis Parameter Name Example Roll/Pitch time constant (MC_ROLL_TC, 0.2f) Roll/Pitch/Yaw P gain (MC_ROLL_P, 6.5f) Roll/Pitch/Yaw rate P gain (MC_ROLLRATE_P, 0.15f) Roll/Pitch/Yaw rate I gain (MC_ROLLRATE_I, 0.05f) Roll/Pitch/Yaw rate integrator limit (MC_RR_INT_LIM, 0.30f) Roll/Pitch/Yaw rate D gain (MC_ROLLRATE_D, 0.003f) Roll/Pitch/Yaw rate feedforward (MC_ROLLRATE_FF, 0.0f) Yaw feed forward (MC_YAW_FF, 0.5f) - - - Roll/Pitch/Yaw Max rate in automous mode (MC_ROLLRATE_MAX, 220.0/220/200f) - - - Battery power level scaler boolean (MC_BAT_SCALE_EN, 0) - - - TPA P/I/D Breakpoint Throttle PID Attenuation (TPA) (MC_TPA_BREAK_P, 1.0f) TPA Rate P/I/D Throttle PID Attenuation (TPA) (MC_TPA_RATE_P, 0.0f) mc_att_control_main.cpp （姿态控制控制率）Key Points 控制率主要有两环，姿态（角度）误差用P控制，角速率误差用PD控制 Yaw响应比Roll/Pitch慢 对于小误差控制器控制旋翼机以最短推力矢量方向旋转，再独立旋转Yaw,因此实际旋转轴并不固定 对于大误差控制器使旋翼机沿固定轴旋转 这两种方式根据角度误差的比重无缝融合 当推力矢量方向接近水平（pi/2）时，考虑到奇点Yaw目标会失效 控制器不依赖欧拉角，欧拉角生成只是为了便于理解和记录 当旋转矩阵目标点无效时，会从欧拉角产生，这样可以和老的位置控制器兼容 #include&lt;&gt; drivers lib px4 systemlib uORB App definition Multicopter attitude control app start / stop handling functionextern &quot;C&quot; __EXPORT int mc_att_control_main(int argc, char *argv[]);(extern “C” {}: c,c++ 混合编程时的一个处理方法） #define又定义了一些似乎重复和新的变量 class MulticopterAttitudeControlpublic: MulticopterAttitudeControl(); 建立 ~MulticopterAttitudeControl();销毁 int start();开始private: 一堆int 一堆struct 一个Union 一堆math::Vector 一个大结构体 _params_handles 基本上是params 文件里定义的参数，又定义一遍 同上 _params 感觉跟上面有些重复，但是类型不一样 一堆int,void的函数 namespace mc_att_controlnamespace mc_att_control { MulticopterAttitudeControl *g_control; } 建立MulticopterAttitudeControl::MulticopterAttitudeControl()销毁MulticopterAttitudeControl::~MulticopterAttitudeControl()参数更新 int MulticopterAttitudeControl::parameters_update()一堆各种poll参数Poll,飞行器模式poll,手动poll,姿态目标点poll,rate目标点poll,arm状态poll,飞行器状态poll,电机极限poll,电池状态poll, 姿态控制 control_attitude油门 Throttle PID attenuation姿态rate控制 control_attitude_ratestask_mainstartmc_att_control_main]]></content>
-      <categories>
-        <category>reading</category>
-      </categories>
-      <tags>
-        <tag>PX4</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Search and Rescure UAV System]]></title>
-    <url>%2F2016%2F04%2F04%2FSearch-and-Rescure-UAV%2F</url>
-    <content type="text"><![CDATA[We have developed a fixed-wing UAV system to take part in the Search and Rescure category of Taiwan UAV competition. The video is a good summary for this work and the competition. If you want to get more information, you can continue to read. System ConfigurationThe basic airfram of this UAV system is a commercial EPO model called Talon. We added many subsystems to the UAV platform to enable the autonomous targets search. The airspeed sensor is mounted on a pretty 3D-printing sit. The Automatic Antana Tracker(AAT) is used to extent the communication range of the 433MHz temelemtry system. This figure shows the navigation turning results in Yuan Lung test site. We mounted two camaras on the UAV. The main camera is the GoPro with two-axis gimbal. This is the map we built for the flight site Propolsion SystemImage SystemFlight Tests and ResultsPublicationsSun, J.; Li, B.; Jiang, Y.; Wen, C.-Y. A Camera-Based Target Detection and Positioning UAV System for Search and Rescue (SAR) Purposes. Sensors 2016, 16, 1778. Download]]></content>
+    <title>Dancing Robot</title>
+    <url>/2011/03/04/Dancing-Robot/</url>
+    <content><![CDATA[<p>The goal of the competition is to build a robot which can dance with music. </p>
+<a id="more"></a>
+
+<p>The music is pre-prepared so the actions of the robot is fixed. This is the second project I was involved after the smart racing car. Similar to all the robotic system, the development of dancing robots also including three parts, which are mechanical design, electronic design, and finally software design. The mechanical design part provide every team a chance to define their own dancing robot. The idea of our team came from a member Qi. He would like to design a robot which could be transformed between a hand shape and a dog shape. </p>
+<p>The robot in the hand shape is shown here<br>Hand:<br><img src="/images/robot2.jpg" alt="hand"></p>
+<p>The robot in the dog shape is shown here<br> Dog:<br><img src="/images/robot3.jpg" alt="Dog"></p>
+<p>Besides to the mechanical design, we also need to design the PCB board for the system. Luckily, as our team has participated in this competition for many years, we have quite stable PCB board to power and drive up to 24 servos. But at that time, all the servos we used are analog servos which are not precise enough for some high challenge motions. To upgrade to digital servos, all the PCB and software should be upgraded. For this time of competition, we did not make such large upgrade. All the upgrade was made one year later.</p>
+<p>Besides to dancing robot, our team also participated into search and rescue robot competition. It is still a quite challenge mission at the year of 2011. The ground robot will enter an unknown environment and conduct SLAM mission. Although the vehicle could be operated remotely by WiFi network, it still need to finish some quite hard tasks such as clime stairs. </p>
+<p><img src="/images/robot4.jpg" alt="tank"></p>
+<p>After nearly a week of competition, we have won many prizes in both dancing and search/rescue robot group. This is my first time to take part in a national competition and I found it quite challenge but interesting. I need to finish regular courses and homework on time, and still need to spent extra time on these competitions. But the hand-on work like this really arouse my interests as an engineering student. These competitions provide us with good opportunity to build some real machines which may help to solve some practical problems in the future.<br><img src="/images/dance1.jpg" alt="Team"></p>
+]]></content>
       <categories>
         <category>project</category>
       </categories>
       <tags>
+        <tag>Undergraduate</tag>
         <tag>Competition</tag>
-        <tag>PhD</tag>
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[UAV Communication Relay System]]></title>
-    <url>%2F2016%2F03%2F04%2FUAV-Communication-Relay-System%2F</url>
-    <content type="text"><![CDATA[PolyU-RelayThis is a quick summary to the working flow of the system. PublicationsLi, B.; Jiang, Y.; Sun, J.; Cai, L.; Wen, C.-Y. Development and Testing of a Two-UAV Communication Relay System. Sensors 2016, 16, 1696. Download]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-      <tags>
-        <tag>Competition</tag>
-        <tag>PhD</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[QuadPlane UAV]]></title>
-    <url>%2F2016%2F03%2F04%2FQuadPlane-UAV%2F</url>
-    <content type="text"></content>
+    <title>QuadPlane UAV</title>
+    <url>/2016/03/04/QuadPlane-UAV/</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>project</category>
       </categories>
@@ -71,49 +48,90 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Flapping-Wing MAV]]></title>
-    <url>%2F2015%2F03%2F04%2FFlapping-wing-MAV%2F</url>
-    <content type="text"><![CDATA[The flapping-wing micro air vehicle is my project during the master’s study. Our research group in NPU built different kinds for small flying vehicles including flapping-wing and fixed-wing MAV. The flapping-wing MAV is our focused topic for more than 10 years. Here is a video to introduce our flapping-wing MAV.]]></content>
+    <title>Smart Car</title>
+    <url>/2010/03/04/Smart-Car/</url>
+    <content><![CDATA[<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><p>For this competition, the goal is to build a smart car which could follow the black curve with the camera information automatically.</p>
+<p><img src="/images/route.jpg" alt="Route"></p>
+<a id="more"></a>
+
+<h2 id="PCB-Design"><a href="#PCB-Design" class="headerlink" title="PCB Design"></a>PCB Design</h2><p>My task is mainly the PCB design. This is a two-layer PCB with a Freescale MCU.</p>
+<p><img src="/images/pcb.jpg" alt="PCB"></p>
+<h2 id="Our-Car"><a href="#Our-Car" class="headerlink" title="Our Car"></a>Our Car</h2><p>We put a CCD camera in the heading of our car to detect the route.<br><img src="/images/car1.jpg" alt="Our car"></p>
+]]></content>
       <categories>
         <category>project</category>
       </categories>
       <tags>
-        <tag>Master</tag>
+        <tag>Undergraduate</tag>
+        <tag>Competition</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UAV Communication Relay System</title>
+    <url>/2016/03/04/UAV-Communication-Relay-System/</url>
+    <content><![CDATA[<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>In the development of beyond-line-of-sight (BLOS) Unmanned Aerial Vehicle (UAV) systems, communication between the UAVs and the ground control station (GCS) is of critical importance. The commonly used economical wireless modules are restricted by the short communication range and are easily blocked by obstacles. The use of a communication relay system provides a practical way to solve these problems, improving the performance of UAV communication in BLOS and cross-obstacle operations. In this study, a communication relay system, in which a quadrotor was used to relay radio communication for another quadrotor was developed and tested. First, the UAVs used as the airborne platform were constructed, and the hardware for the communication relay system was selected and built up. Second, a set of software programs and protocol for autonomous mission control, communication relay control, and ground control were developed. Finally, the system was fully integrated into the airborne platform and tested both indoor and in-flight. The Received Signal Strength Indication (RSSI) and noise value in two typical application scenarios were recorded. The test results demonstrated the ability of this system to extend the communication range and build communication over obstacles. This system also shows the feasibility to coordinate multiple UAVs’ communication with the same relay structure.<br><img src="/images/momson.png" width = "800" height = "300" alt="title" align=center /></p>
+<a id="more"></a>
+
+<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/HxN0oafNmzw" frameborder="0" allowfullscreen></iframe>
+
+
+<h2 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h2><p>Li, B.; Jiang, Y.; Sun, J.; Cai, L.; Wen, C.-Y. Development and Testing of a Two-UAV Communication Relay System. Sensors 2016, 16, 1696. <i class="fa fa-download"></i> <a href="http://www.mdpi.com/1424-8220/16/10/1696/pdf" target="_blank" rel="noopener">Download</a></p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>Competition</tag>
+        <tag>PhD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Search and Rescure UAV System</title>
+    <url>/2016/04/04/Search-and-Rescure-UAV/</url>
+    <content><![CDATA[<p>We have developed a fixed-wing UAV system to take part in the Search and Rescure category of Taiwan UAV competition. The video is a good summary for this work and the competition.</p>
+<img src="/images/strike1.jpg" width = "600" height = "400" alt="title" align=center />
+
+<img src="/images/strike2.jpg" width = "600" height = "400" alt="title" align=center />
+<a id="more"></a>
+
+<h2 id="System-Configuration"><a href="#System-Configuration" class="headerlink" title="System Configuration"></a>System Configuration</h2><p>The basic airfram of this UAV system is a commercial EPO model called Talon.<br><img src="/images/strike2.png" width = "500" height = "300" alt="title" align=center /></p>
+<p>We added many subsystems to the UAV platform to enable the autonomous targets search.<br><img src="/images/strike1.png" width = "500" height = "600" alt="title" align=center /></p>
+<p>The airspeed sensor is mounted on a pretty 3D-printing sit.<br><img src="/images/strike3.png" width = "50%" height = "50%" alt="title" align=center /></p>
+<p>The Automatic Antana Tracker(AAT) is used to extent the communication range of the 433MHz temelemtry system.<br><img src="/images/strike4.png" width = "50%" height = "50%" alt="title" align=center /></p>
+<p>This figure shows the navigation turning results in Yuan Lung test site.<br><img src="/images/strike6.png" width = "50%" height = "50%" alt="title" align=center /></p>
+<p>We mounted two camaras on the UAV. The main camera is the GoPro with two-axis gimbal.<br><img src="/images/strike7.png" width = "50%" height = "50%" alt="title" align=center /></p>
+<p>This is the map we built for the flight site </p>
+<img src="/images/strike9.png" width = "400" height = "600" alt="title" align=center />
+
+<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/ZK2kLsNICog?list=PLExhUFMJ8R20t3anCNDYLnFilz3u3lc0S" frameborder="0" allowfullscreen></iframe>
+
+<h2 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h2><p>Sun, J.; Li, B.; Jiang, Y.; Wen, C.-Y.    A Camera-Based Target Detection and Positioning UAV System for Search and Rescue (SAR) Purposes. Sensors 2016, 16, 1778. <i class="fa fa-download"></i> <a href="http://www.mdpi.com/1424-8220/16/11/1778/pdf" target="_blank" rel="noopener">Download</a></p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>Competition</tag>
+        <tag>PhD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vertical Takeoff and Landing (VTOL) Tail-Sitter UAV</title>
+    <url>/2018/10/14/VTOL-Tailsitter/</url>
+    <content><![CDATA[<p>This is the main topic for my <a href="http://ira.lib.polyu.edu.hk/handle/10397/80315" target="_blank" rel="noopener">PhD thesis</a>. The aim of this project is to design and optimize a VTOL tail-sitter UAV. The main work can be divided into design, model and control parts.</p>
+<img src="/images/jiajia1.jpg" width = "550" height = "300" alt="title" align=center />
+
+<a id="more"></a>
+
+<h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><p>Unmanned Aerial Vehicles (UAVs) are playing more and more important roles in current society. They can not only be used for entertainment, but also execute missions such as surveillance, cargo delivery, geographic survey, etc. Tail-sitter UAV, one of the configurations that can vertically take off and land (VTOL), is a promising high efficient UAV configuration that can be adopted in high-density urban areas. The main object of this thesis is to improve the hovering and transition performance of tail-sitter UAV system, by studying the key technologies including modeling, model predictive control, and optimal transition trajectory. First of all, the quad-rotor tail-sitter UAV prototype ‘PolyU Plus Tail-sitter’ (PPT) is designed and built according to the requirement of urban cargo delivery missions. The ‘plus’ flying-wing configuration is selected due to the structural simplicity, high aerodynamic efficiency, and actuator reliability. Digital model of the UAV is built up for control simulation and performance analysis. The developed simulation model can reflect the main dynamic characteristics of the UAV and is able to be used as real-time simulation platform. Then, the cascaded two-loop model predictive controller (MPC) for hover flight is developed based on linearized state-space model. The measured and unmeasured disturbance are introduced into the augmented dynamic model to improve the tracking and disturbance rejection performance. The controllers are tuned and verified in the hardware-in-loop (HIL) simulation environment and then implemented to an onboard flight computer for real-time execution in the indoor VICON environment. The simulation and experimental results indicates that the proposed MPC controller has good tracking and position holding capability against disturbance such as prevailing and gusty winds. Finally, both the forward and back transition trajectories are optimized according to the minimized energy costs. The simplified 3-DOF longitudinal model is used as the dynamic constraint. The transition optimization problem is transcript into a non-linear programming (NLP) problem and solved by collocation methods. Simulation with Gazebo simulator and outdoor flight experiments are carried out with the optimized transition trajectories. The simulation and experimental results show that the optimized transition strategy enable both the forward and back transitions with less time, less height change, and energy consumption compared with traditional linear transition method.</p>
+<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/kYevywwGgjQ" frameborder="0" allowfullscreen></iframe>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
         <tag>Thesis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Dancing Robot]]></title>
-    <url>%2F2011%2F03%2F04%2FDancing-Robot%2F</url>
-    <content type="text"><![CDATA[The goal of the competition is to build a robot which can dance with music. The music is pre-prepared so the actions of the robot is fixed. This is the second project I was involved after the smart racing car. Similar to all the robotic system, the development of dancing robots also including three parts, which are mechanical design, electronic design, and finally software design. The mechanical design part provide every team a chance to define their own dancing robot. The idea of our team came from a member Qi. He would like to design a robot which could be transformed between a hand shape and a dog shape. The robot in the hand shape is shown hereHand: The robot in the dog shape is shown here Dog: Besides to the mechanical design, we also need to design the PCB board for the system. Luckily, as our team has participated in this competition for many years, we have quite stable PCB board to power and drive up to 24 servos. But at that time, all the servos we used are analog servos which are not precise enough for some high challenge motions. To upgrade to digital servos, all the PCB and software should be upgraded. For this time of competition, we did not make such large upgrade. All the upgrade was made one year later. Besides to dancing robot, our team also participated into search and rescue robot competition. It is still a quite challenge mission at the year of 2011. The ground robot will enter an unknown environment and conduct SLAM mission. Although the vehicle could be operated remotely by WiFi network, it still need to finish some quite hard tasks such as clime stairs. After nearly a week of competition, we have won many prizes in both dancing and search/rescue robot group. This is my first time to take part in a national competition and I found it quite challenge but interesting. I need to finish regular courses and homework on time, and still need to spent extra time on these competitions. But the hand-on work like this really arouse my interests as an engineering student. These competitions provide us with good opportunity to build some real machines which may help to solve some practical problems in the future.]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-      <tags>
-        <tag>Undergraduate</tag>
-        <tag>Competition</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Smart Car]]></title>
-    <url>%2F2010%2F03%2F04%2FSmart-Car%2F</url>
-    <content type="text"><![CDATA[GoalFor this competition, the goal is to build a smart car which could follow the black curve with the camera information automatically. PCB DesignMy task is mainly the PCB design. This is a two-layer PCB with a Freescale MCU. Our CarWe put a CCD camera in the heading of our car to detect the route.]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-      <tags>
-        <tag>Undergraduate</tag>
-        <tag>Competition</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Template]]></title>
-    <url>%2F2001%2F01%2F01%2FTemplate%2F</url>
-    <content type="text"><![CDATA[Hello this is the template for me to generate posts.This is the first line. Title 1first linkLink to googlecontinue title 2Bold /* 分隔线 */ /* 空行 */ 引用内容 下载 人生乃是一面镜子，从镜子里认识自己，我要称之为头等大事，也只是我们追求的目的！ 内容 内容 内容/* 详细请查看 http://www.w3school.com.cn/tags/tag_font.asp */ This is block quote. HTML code example This is list item 1 This is list item 2 This is list item 3 This is inside list 1 This is inside list 2 This is list item 4 Ordered list item Ordered list item Ordered list item This is list item 5]]></content>
-      <tags>
-        <tag>travel</tag>
-        <tag>read</tag>
-        <tag>life</tag>
+        <tag>PhD</tag>
       </tags>
   </entry>
 </search>
