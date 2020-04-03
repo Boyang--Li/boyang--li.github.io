@@ -69,22 +69,23 @@
   <entry>
     <title>Search and Rescue UAV System &#39;PolyU Strike&#39;</title>
     <url>/2016/04/04/Search-and-Rescure-UAV/</url>
-    <content><![CDATA[<p>We have developed a fixed-wing UAV system to take part in the Search and Rescue category of Taiwan UAV competition. The video is a good summary for this work and the competition.</p>
+    <content><![CDATA[<p>We have developed a fixed-wing UAV system to take part in the Search and Rescue category of Taiwan UAV competition.</p>
 <img src="/images/strike1.jpg" width = "600" height = "400" alt="title" align=center />
 
 <img src="/images/strike2.jpg" width = "600" height = "400" alt="title" align=center />
 <a id="more"></a>
 
-<h2 id="System-Configuration"><a href="#System-Configuration" class="headerlink" title="System Configuration"></a>System Configuration</h2><p>The basic airfram of this UAV system is a commercial EPO model called Talon.<br><img src="/images/strike2.png" width = "500" height = "300" alt="title" align=center /></p>
+<h2 id="System-Configuration"><a href="#System-Configuration" class="headerlink" title="System Configuration"></a>System Configuration</h2><p>The basic airframe of this UAV system is a commercial EPO model called Talon.<br><img src="/images/strike2.png" width = "500" height = "300" alt="title" align=center /></p>
 <p>We added many subsystems to the UAV platform to enable the autonomous targets search.<br><img src="/images/strike1.png" width = "500" height = "600" alt="title" align=center /></p>
 <p>The airspeed sensor is mounted on a pretty 3D-printing sit.<br><img src="/images/strike3.png" width = "50%" height = "50%" alt="title" align=center /></p>
-<p>The Automatic Antana Tracker(AAT) is used to extent the communication range of the 433MHz temelemtry system.<br><img src="/images/strike4.png" width = "50%" height = "50%" alt="title" align=center /></p>
+<p>The Automatic Antenna Tracker(AAT) is used to extent the communication range of the 433MHz telemetry system.<br><img src="/images/strike4.png" width = "50%" height = "50%" alt="title" align=center /></p>
 <p>This figure shows the navigation turning results in Yuan Lung test site.<br><img src="/images/strike6.png" width = "50%" height = "50%" alt="title" align=center /></p>
-<p>We mounted two camaras on the UAV. The main camera is the GoPro with two-axis gimbal.<br><img src="/images/strike7.png" width = "50%" height = "50%" alt="title" align=center /></p>
-<p>This is the map we built for the flight site </p>
+<p>We mounted two cameras on the UAV. The main camera is the GoPro with two-axis gimbal.<br><img src="/images/strike7.png" width = "50%" height = "50%" alt="title" align=center /></p>
+<p>This is the map we built for the flight site.</p>
 <img src="/images/strike9.png" width = "400" height = "600" alt="title" align=center />
 
-<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/ZK2kLsNICog?list=PLExhUFMJ8R20t3anCNDYLnFilz3u3lc0S" frameborder="0" allowfullscreen></iframe>
+<h2 id="Video"><a href="#Video" class="headerlink" title="Video"></a>Video</h2><p>This video is a good summary for this work and the competition.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lQ8Za7nsX38" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h2><p>Sun, J.; Li, B.; Jiang, Y.; Wen, C.-Y.    A Camera-Based Target Detection and Positioning UAV System for Search and Rescue (SAR) Purposes. Sensors 2016, 16, 1778. <i class="fa fa-download"></i> <a href="http://www.mdpi.com/1424-8220/16/11/1778/pdf" target="_blank" rel="noopener">Download</a></p>
 ]]></content>
@@ -135,41 +136,26 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2010/04/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+    <title>Underwater Unmanned Vehicle (UUV) Development</title>
+    <url>/2020/04/04/Underwater%20ROV/</url>
+    <content><![CDATA[<p>This work is a part of the <a href="https://orcahub.org/" target="_blank" rel="noopener">OCRA</a> (Offshore Robotics for Certification of Assets) project led by the <a href="https://www.edinburgh-robotics.org/" target="_blank" rel="noopener">Edinburgh Centre for Robotics</a>. With the advanced experimental facility <a href="https://www.flowavett.co.uk/" target="_blank" rel="noopener">FloWave</a> and the underwater visual localization system <a href="qualisys.com">Qualisys</a>, we could conduct a lot of experiments to simulate different kinds of ocean condition in the controlled indoor environment with precise position feedback.</p>
+<img src="/images/rov0.jpg" width = "50%" height = "50%" alt="title" align=center />
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<img src="/images/rov.jpg" width = "50%" height = "50%" alt="title" align=center />
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<img src="/images/rov1.jpg" width = "50%" height = "50%" alt="title" align=center />
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<p>$$\begin{equation}\label{eq1}<br>e=mc^2<br>\end{equation}$$</p>
-<!-- $$\begin{equation}\label{eq2}
-\begin{aligned}
-a &= b + c \\
-  &= d + e + f + g \\
-  &= h + i
-\end{aligned}
-\end{equation}$$
+<img src="/images/rov2.jpg" width = "50%" height = "50%" alt="title" align=center />
 
-$$\begin{align}
-a &= b + c \label{eq3} \\
-x &= yz \label{eq4}\\
-l &= m - n \label{eq5}
-\end{align}$$
-
-$$\begin{align}
--4 + 5x &= 2+y \nonumber  \\
- w+2 &= -1+w \\
- ab &= cb
-\end{align}$$ -->
-]]></content>
+<img src="/images/rov3.jpg" width = "50%" height = "50%" alt="title" align=center />]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>Postdoc</tag>
+        <tag>OCRA</tag>
+      </tags>
   </entry>
 </search>
