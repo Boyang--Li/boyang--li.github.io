@@ -8,10 +8,10 @@
 #  education3:
 #  education4:
 
-- name: DDD
+- name: Hello World
   photo: rock.jpg
-  info: Master student
-  email: R.Gharibaan@student.tudelft.nl
+  info: Mphil student
+  email: hw@connect.polyu.hk
   number_educ: 0
   education1:
 
