@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Team"
+title: "Autonomous Aerial Vehicles Group - Team"
 layout: gridlay
-excerpt: "Allan Lab: Team members"
+excerpt: "Autonomous Aerial Vehicles Group: Team members"
 sitemap: false
 permalink: /team/
 ---
