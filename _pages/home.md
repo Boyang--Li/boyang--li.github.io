@@ -1,7 +1,7 @@
 ---
-title: "Allan Lab - Home"
+title: "Autonomous Aerial Vehicles Group - Home"
 layout: homelay
-excerpt: "Allan Lab at Leiden University."
+excerpt: "Autonomous Aerial Vehicles Group at HK PolyU"
 sitemap: false
 permalink: /
 ---
