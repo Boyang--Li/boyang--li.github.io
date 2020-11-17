@@ -9,7 +9,7 @@
 title: Autonomous Aerial Vehicles Group
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-Website of Dr Boyang Li's research group
+  Website of Dr Boyang Li's research group
 baseurl: ""
 url: "http://boyangli.com"
 
