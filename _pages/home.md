@@ -6,8 +6,7 @@ sitemap: false
 permalink: /
 ---
 
-We are a dynamic research group at the [University](http://www.polyu.edu.hk). Our aim is to explore and understand XXX, including XXX.
-
+We are a dynamic research group at [The Hong Kong Polytechnic University](http://www.polyu.edu.hk). Our aim is to develop autonomous aerial vehicles for different kinds of civil applications, including infrastructure inspection, cargo delivery, search and rescure etc.
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" >
     <!-- Menu -->
@@ -55,13 +54,3 @@ We are a dynamic research group at the [University](http://www.polyu.edu.hk). Ou
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-
-
-
-To this end, we develop (see [Research](research)).
-
-We are located at 
-
- **We are  looking for passionate new PhD students, Postdocs, and Master students to join the team** [(more info)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
-
