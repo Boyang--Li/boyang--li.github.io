@@ -10,7 +10,7 @@ title: Autonomous Aerial Vehicles Group
 email: boyang.li@connect.polyu.hk
 description: Website of Dr Boyang Li's Research Group
 baseurl: ""
-url: "http://boyangli.com"
+url: "https://boyangli.com"
 
 include:
   - .htaccess
