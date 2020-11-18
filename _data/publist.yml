@@ -1,9 +1,18 @@
-- title: "Fabrication of on-chip probes for double-tip scanning tunneling microscopy"
-  image: TBG_ARPES.png
+- title: "An Optimal Transition Control Method for Tail-sitter VTOL UAVs"
+  image: jiajia1
   description:
   link:
-    url: https://www.nature.com/articles/s41378-020-00209-y
-    display:  Microsyst Nanoeng 6, 99 (2020)
-  highlight: 0
+    url: https://ieeexplore.ieee.org/abstract/document/9051852
+    display:  T-Mech (2020)
+  highlight: 1
+  news2:
+
+- title: "Model-Aided Wind Estimation Method for a Tail-Sitter Aircraft"
+  image: 2019-TAE-Jingxuan.jpg
+  description:
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/8765354
+    display:  T-AES (2020)
+  highlight: 1
   news2:
 
