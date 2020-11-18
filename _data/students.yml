@@ -9,9 +9,9 @@
 #  education4:
 
 - name: Hello World
-  photo: rock.jpg
+  photo: bio-photo.jpg
   info: Mphil student
   email: hw@connect.polyu.hk
-  number_educ: 0
-  education1:
+  number_educ: 1
+  education1: Hogwarts School of Witchcraft and Wizardry
 
