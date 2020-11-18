@@ -3,11 +3,19 @@
   info: Research Assistant Professor
   email: bo-yang.li@polyu.edu.hk
   number_educ: 3
-  education1: PhD, The Hong Kong Polytechnic Univeristy, Hong Kong SAR
-  education2: M.Eng, Northwestern Polytechnical University, Xi’an, China
-  education3: B.Eng, Northwestern Polytechnical University, Xi’an, China.
+  education1: PhD, The Hong Kong Polytechnic Univeristy, 2018
+  education2: M.Eng, Northwestern Polytechnical University, 2015
+  education3: B.Eng, Northwestern Polytechnical University, 2012
 
-  
+- name: Chih-Yung Wen
+  photo: cywen.jpg
+  info: Professor and Interim Head of AAE
+  email: cywen@polyu.edu.hk
+  number_educ: 3
+  education1: PhD, California Institute of Technology, 1994
+  education2: M.Sc, California Institute of Technology, 1989
+  education3: B.Sc, National Taiwan University, 1986
+
 # - name: Milan P Allan
 #   photo: Milan.jpg
 #   info: Associate professor, started Jan 2015

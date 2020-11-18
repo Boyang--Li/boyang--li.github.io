@@ -1,3 +1,28 @@
+- title: An Actuator Allocation Method for a Variable-Pitch Propeller System of Quadrotor-based UAVs"
+  image: 2020-Sensors-Chingwei.jpg
+  description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
+  authors: C.-W. Chang, S. Chen, C.-Y. Wen, and B. Li*
+  link:
+    url: https://www.mdpi.com/1424-8220/20/19/5651
+    display:  Sensors (2020)
+  highlight: 1
+
+- title: Numerical Modelling and Experimental Testing of the Hydrodynamic Characteristics for an Open-Frame Remotely Operated Vehicle
+  authors: Q Li, Y Cao, B Li, DM Ingram, A Kiprakis
+  link:
+    url: https://www.mdpi.com/2077-1312/8/9/688
+    display: JMSE (2009)
+  highlight: 0
+
+- title: A Nonlinear Model Predictive Controller for Remotely Operated Underwater Vehicles With Disturbance Rejection
+  image: rov.jpg
+  description: We developed a nonlinear MPC controller for underwater ROV.
+  authors: Y Cao, B Li, Q Li, AA Stokes, DM Ingram, A Kiprakis
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/9180253
+    display: Access (2009)
+  highlight: 1
+
 - title: "An Optimal Transition Control Method for Tail-sitter VTOL UAVs"
   image: jiajia1.jpg
   description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
