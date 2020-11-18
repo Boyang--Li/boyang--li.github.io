@@ -1,18 +1,26 @@
 - title: "An Optimal Transition Control Method for Tail-sitter VTOL UAVs"
-  image: jiajia1
-  description:
+  image: jiajia1.jpg
+  description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
+  authors: B. Li, J. Sun, W. Zhou, C.Y. Wen, K.H. Low, and C.K. Chen
   link:
     url: https://ieeexplore.ieee.org/abstract/document/9051852
     display:  T-Mech (2020)
   highlight: 1
-  news2:
 
 - title: "Model-Aided Wind Estimation Method for a Tail-Sitter Aircraft"
   image: 2019-TAE-Jingxuan.jpg
-  description:
+  description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
+  authors: J. Sun, B. Li, C.Y. Wen, and C.K. Chen
   link:
     url: https://ieeexplore.ieee.org/abstract/document/8765354
     display:  T-AES (2020)
   highlight: 1
-  news2:
 
+- title: Adaptive Model Predictive Control Method for a Tail-Sitter VTOL UAV
+  image: jiajia1.jpg
+  description:
+  authors: W. Zhou, B. Li, J. Sun, C.Y. Wen, C.K. Chen
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0967066119301340
+    display: CEP (2009)
+  highlight: 0
