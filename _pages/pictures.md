@@ -61,6 +61,12 @@ From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 From the [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/IMG_3809.JPG" width="60%">
+</figure>
+
+## Old-time @ NPU
+From the [Micro Air Vehicle Laboratory](https://hangkong.nwpu.edu.cn/English/home.htm) and undergraduate student groups.
+<figure>
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/dance1.jpg" width="60%">
 </figure> -->
 
 
