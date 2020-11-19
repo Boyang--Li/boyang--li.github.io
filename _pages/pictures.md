@@ -54,7 +54,7 @@ From [The Soft Systems Group](https://softsystemsgroup.com/).
 ## Postdoc @ NTU
 From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/WebpageCornell_red.jpg" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/atmri.jpg" width="60%">
 </figure>
 
 ## PhD Study @ PolyU
