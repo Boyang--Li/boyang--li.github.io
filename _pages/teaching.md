@@ -1,5 +1,5 @@
 ---
-title: "Teaching"
+title: "AAV Group - Teaching"
 layout: textlay
 excerpt: "Teaching"
 sitemap: false
