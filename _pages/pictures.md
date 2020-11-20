@@ -18,7 +18,7 @@ permalink: /pictures/
 {% endif %}
 
 <div class="col-sm-3 clearfix">
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/Gallery/{{ pic.image }}" class="img-responsive" width="95%" style="float: left" />
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyuNew/{{ pic.image }}" class="img-responsive" width="95%" style="float: left" />
 </div>
 
 {% assign number_printed = number_printed | plus: 1 %}
@@ -48,26 +48,26 @@ permalink: /pictures/
 ## Postdoc @ UoE
 From [The Soft Systems Group](https://softsystemsgroup.com/).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/rov3.jpg" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UOE/rov3.jpg" width="60%">
 </figure>
 
 ## Postdoc @ NTU
 From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/atmri.jpg" width="40%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/ATMRI/DSC08906.JPG" width="60%">
 </figure>
 
 ## PhD Study @ PolyU
 From the [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/IMG_3809.JPG" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="60%">
 </figure>
 
 ## Old-time @ NPU
 From the [Micro Air Vehicle Laboratory](https://hangkong.nwpu.edu.cn/English/home.htm) and undergraduate student groups.
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/dance1.jpg" width="60%">
-</figure> -->
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/NPU/car1.jpg" width="60%">
+</figure>
 
 
 

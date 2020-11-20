@@ -8,6 +8,8 @@ permalink: /team/
 
 # Group Members
 
+**We are working closely with the [PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html) supervised by Prof Chih-Yung Wen.**
+
 ## Staff
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}

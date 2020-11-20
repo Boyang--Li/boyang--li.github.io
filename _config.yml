@@ -8,7 +8,7 @@
 # Site settings
 title: Autonomous Aerial Vehicles Group
 email: boyang.li@connect.polyu.hk
-description: Boyang Li's Research Group
+description: Website of Boyang's Research Group
 baseurl: ""
 url: ""
 
@@ -38,3 +38,15 @@ kramdown:
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
 
+social:
+  GitHub: https://github.com/boyang--li || github
+  E-Mail: mailto:lbynwpu@gmail.com || envelope
+  Linkedin: https://www.linkedin.com/in/boyang-li-10398480 || linkedin
+
+links:
+  PolyU HTML Group: https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html
+  Soft Systems Group: https://softsystemsgroup.com/
+
+# Google Analytics
+  google_analytics:
+  tracking_id: UA-69834901-1

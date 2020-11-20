@@ -51,11 +51,8 @@ To this end, we have developed different kinds of unmanned aircraft systems incl
   </a>
 </div>
 
-
-
-
 <figure class="fourth">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/polyu-logo.png" style="width: 210px">
-  <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/aaelogo.png" style="width: 210px">
+  <a href="https://www.polyu.edu.hk/"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/polyu-logo.png" style="width: 210px"></a>
+  <a href="https://www.polyu.edu.hk/aae"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/aaelogo.png" style="width: 210px"></a>
 </figure>
 
