@@ -26,5 +26,4 @@ Sun, J.; Li, B.; Jiang, Y.; Wen, C.-Y.	A Camera-Based Target Detection and Posit
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HxN0oafNmzw" frameborder="0" allowfullscreen></iframe>
 Li, B.; Jiang, Y.; Sun, J.; Cai, L.; Wen, C.-Y. Development and Testing of a Two-UAV Communication Relay System. Sensors 2016, 16, 1696. <i class="fa fa-download"></i> [Download](http://www.mdpi.com/1424-8220/16/10/1696/pdf)
 
-
-{% cq %} Stay Hungry, Stay Foolish. {% endcq %}
+<!-- Stay Hungry, Stay Foolish -->
