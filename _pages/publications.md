@@ -6,10 +6,9 @@ sitemap: false
 permalink: /publications/
 ---
 
-
 # Publications
 
-(For a full list see [below](#full-list) or go to [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ), [ORCiD](https://orcid.org/0000-0002-6900-0901))
+(For a full list go to <i class="fa fa-google"></i> [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ) or <i class="fa fa-orcid"></i>[ORCiD](https://orcid.org/0000-0002-6900-0901).)
 
 ## Research Highlights
 
