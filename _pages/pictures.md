@@ -6,7 +6,7 @@ permalink: /pictures/
 ---
 
 # Pictures
-## RAP @ PolyU
+## NEW @ PolyU
 
 {% assign number_printed = 0 %}
 {% for pic in site.data.pictures_poly2 %}
@@ -48,25 +48,26 @@ permalink: /pictures/
 ## Postdoc @ UoE
 From [The Soft Systems Group](https://softsystemsgroup.com/).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UOE/rov3.jpg" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UOE/rov.jpg" width="40%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UOE/rov3.jpg" width="40%">
 </figure>
 
 ## Postdoc @ NTU
 From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/ATMRI/DSC08906.JPG" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/ATMRI/DSC08906.JPG" width="40%">
 </figure>
 
 ## PhD Study @ PolyU
 From the [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="40%">
 </figure>
 
 ## Old-time @ NPU
 From the [Micro Air Vehicle Laboratory](https://hangkong.nwpu.edu.cn/English/home.htm) and undergraduate student groups.
 <figure>
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/NPU/car1.jpg" width="60%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/NPU/car1.jpg" width="40%">
 </figure>
 
 

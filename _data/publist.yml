@@ -1,32 +1,32 @@
 - title: An Actuator Allocation Method for a Variable-Pitch Propeller System of Quadrotor-based UAVs"
   image: 2020-Sensors-Chingwei.jpg
-  description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
+  description: Sensors
   authors: C.-W. Chang, S. Chen, C.-Y. Wen, and B. Li*
   link:
     url: https://www.mdpi.com/1424-8220/20/19/5651
     display:  Sensors (2020)
   highlight: 1
 
+- title: A Nonlinear Model Predictive Controller for Remotely Operated Underwater Vehicles With Disturbance Rejection
+  image: rov.jpg
+  description: IEEE Access
+  authors: Y Cao, B Li, Q Li, AA Stokes, DM Ingram, A Kiprakis
+  link:
+    url: https://ieeexplore.ieee.org/abstract/document/9180253
+    display: Access (2020)
+  highlight: 1
+
 - title: Numerical Modelling and Experimental Testing of the Hydrodynamic Characteristics for an Open-Frame Remotely Operated Vehicle
   authors: Q Li, Y Cao, B Li, DM Ingram, A Kiprakis
   link:
     url: https://www.mdpi.com/2077-1312/8/9/688
-    display: JMSE (2009)
+    display: JMSE (2020)
   highlight: 0
-
-- title: A Nonlinear Model Predictive Controller for Remotely Operated Underwater Vehicles With Disturbance Rejection
-  image: rov.jpg
-  description: We developed a nonlinear MPC controller for underwater ROV.
-  authors: Y Cao, B Li, Q Li, AA Stokes, DM Ingram, A Kiprakis
-  link:
-    url: https://ieeexplore.ieee.org/abstract/document/9180253
-    display: Access (2009)
-  highlight: 1
 
 - title: "An Optimal Transition Control Method for Tail-sitter VTOL UAVs"
   image: jiajia1.jpg
-  description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
-  authors: B. Li, J. Sun, W. Zhou, C.Y. Wen, K.H. Low, and C.K. Chen
+  description: IEEE/ASME Transactions on Mechatronics
+  authors: B. Li, J. Sun, W. Zhou, C.Y. Wen, K.H. Low, C.K. Chen
   link:
     url: https://ieeexplore.ieee.org/abstract/document/9051852
     display:  T-Mech (2020)
@@ -34,18 +34,51 @@
 
 - title: "Model-Aided Wind Estimation Method for a Tail-Sitter Aircraft"
   image: 2019-TAE-Jingxuan.jpg
-  description: We developed a optimal transitiom method for a tail-sitter VTOL UAV.
-  authors: J. Sun, B. Li, C.Y. Wen, and C.K. Chen
+  description: IEEE Transactions on Aerospace and Electronic Systems
+  authors: J. Sun, B. Li, C.Y. Wen, C.K. Chen
   link:
     url: https://ieeexplore.ieee.org/abstract/document/8765354
     display:  T-AES (2020)
   highlight: 1
 
 - title: Adaptive Model Predictive Control Method for a Tail-Sitter VTOL UAV
-  image: jiajia1.jpg
   description:
   authors: W. Zhou, B. Li, J. Sun, C.Y. Wen, C.K. Chen
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0967066119301340
-    display: CEP (2009)
+    display: CEP (2019)
   highlight: 0
+
+- title: Design and Implementation of a Real-time Hardware-in-the-loop Testing Platform for a Dual-rotor Tail-sitter Unmanned Aerial Vehicle
+  description:
+  authors: J. Sun, B. Li, C.-Y. Wen, C.-K. Chen
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0957415818301521
+    display: Mechatronics (2018)
+  highlight: 0
+
+- title: Development of Model Predictive Controller for a Tail-Sitter VTOL UAV in Hover Flight
+  description:
+  authors: B. Li, W. Zhou, J. Sun, C. Y. Wen, C. K. Chen
+  link:
+    url: https://www.sciencedirect.com/science/article/pii/S0967066119301340
+    display: Sensors (2018)
+  highlight: 0
+
+- title: A Camera-Based Target Detection and Positioning UAV System for Search and Rescue (SAR) Purposes
+  image: strike2.jpg
+  description: Sensors
+  authors: J. Sun, B. Li, Y. Jiang, C. Y. Wen
+  link:
+    url: https://www.mdpi.com/162716
+    display: Sensors (2018)
+  highlight: 1
+
+- title: Development and Testing of a Two-UAV Communication Relay System,
+  image: momson.png
+  description: Sensors
+  authors: B. Li, Y. Jiang, J. Sun, L. Cai, C. Y. Wen
+  link:
+    url: https://www.mdpi.com/1424-8220/16/10/1696
+    display: Sensors (2018)
+  highlight: 1
