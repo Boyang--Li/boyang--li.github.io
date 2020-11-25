@@ -8,10 +8,10 @@
 #  education3:
 #  education4:
 
-- name: Hello World
-  photo: bio-photo.jpg
-  info: Mphil student
-  email: hw@connect.polyu.hk
-  number_educ: 1
-  education1: Hogwarts School of Witchcraft and Wizardry
+# - name: Hello World
+#   photo: bio-photo.jpg
+#   info: Mphil student
+#   email: hw@connect.polyu.hk
+#   number_educ: 1
+#   education1: Hogwarts School of Witchcraft and Wizardry
 
