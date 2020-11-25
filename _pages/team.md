@@ -74,6 +74,7 @@ permalink: /team/
 
 
 ## Research Students
+Coming soon!
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
 
