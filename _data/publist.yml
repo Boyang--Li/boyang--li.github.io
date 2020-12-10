@@ -1,4 +1,12 @@
-- title: An Actuator Allocation Method for a Variable-Pitch Propeller System of Quadrotor-based UAVs"
+- title: System Identification and Control for a Tail-sitter Unmanned Aerial Vehicle in the Cruise Flight
+  description: IEEE Access
+  authors: W. Zhou, S. Chen, C.-W. Chang, C.-Y. Wen, C.-K. Chen, and B. Li*
+  link:
+    url: https://ieeexplore.ieee.org/document/9279215
+    display:  Access (2020)
+  highlight: 0
+
+- title: An Actuator Allocation Method for a Variable-Pitch Propeller System of Quadrotor-based UAVs
   image: 2020-Sensors-Chingwei.jpg
   description: Sensors
   authors: C.-W. Chang, S. Chen, C.-Y. Wen, and B. Li*

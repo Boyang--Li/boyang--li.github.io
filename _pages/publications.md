@@ -8,8 +8,6 @@ permalink: /publications/
 
 # Publications
 
-(For a full list go to [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ) or [ORCiD](https://orcid.org/0000-0002-6900-0901))
-
 ## Research Highlights
 
 {% assign number_printed = 0 %}
@@ -51,7 +49,8 @@ permalink: /publications/
 <p> &nbsp; </p>
 
 
-## Selected List
+## Selected Publication List
+**(For a full list go to [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ) or [ORCiD](https://orcid.org/0000-0002-6900-0901))**
 
 {% for publi in site.data.publist %}
 
