@@ -1,11 +1,11 @@
 ---
-title: "AAV Group - Photos"
+title: "AAV Group - Gallery"
 layout: piclay
-excerpt: "AAV Group -- Photos"
+excerpt: "AAV Group -- Gallery"
 permalink: /pictures/
 ---
 
-# Photos
+<!-- # Gallery -->
 ## Professor @ PolyU
 
 {% assign number_printed = 0 %}
