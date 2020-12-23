@@ -77,7 +77,6 @@ permalink: /team/
 {% endif %}
 
 ## Research Personnel
-Coming soon!
 {% assign number_printed = 0 %}
 {% for member in site.data.researchers %}
 

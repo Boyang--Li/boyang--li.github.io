@@ -15,6 +15,9 @@ permalink: /research/
 3. Robotic path/trajectory optimization to improve the autonomous level and efficiency;
 4. field experiments of aerial/underwater/ground mobile robotic systems.
 
+## Group Github
+[UAV Lab - HKPolyU](https://github.com/HKPolyU-UAV)
+
 ## Research videos
 
 ### UAV-based Autonomous Infrastructure Inspection

@@ -68,6 +68,10 @@ From the [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3720.JPG" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3232.JPG" width="32%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition2.jpg" width="32%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition3.jpg" width="32%">
+<!-- <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition4.jpg" width="32%"> -->
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition5.jpg" width="32%">
 </figure>
 
 <!-- ## Old-time @ NPU
