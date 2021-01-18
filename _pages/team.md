@@ -8,9 +8,9 @@ permalink: /team/
 
 # Group Members
 
-**We are  looking for new Research Assistant, Postdoc, or MSc students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
+<!-- **We are  looking for new Research Assistant, Postdoc, or MSc students to join the team**   -->
 
-**We are working closely with the [PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html) supervised by Prof Chih-Yung Wen.**
+**We are working closely with the [PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html) supervised by Prof Chih-Yung Wen [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies).**
 
 <!-- Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
 

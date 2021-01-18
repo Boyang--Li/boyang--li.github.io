@@ -9,10 +9,10 @@ permalink: /teaching
 # Teaching
 
 ### 2021 Spring
-ME578 – Aircraft Design (M.Sc. Course)
+ME578 – Aircraft Design (M.Sc. Course) 
 
 ### 2020 Autumn
-AAE4202 - Electronics & Information Technologies for Unmanned Aerial Systems (Undergraduate Course)
+AAE4202 - Electronics & Information Technologies for Unmanned Aerial Systems (Undergraduate Course) <i class="fa fa-download"></i> [Syllabus](/downloads/AAE4202_Teaching_Schedule.pdf) 
 
 <!-- <table style="width:30%">
   <tr>
