@@ -1,3 +1,12 @@
+- title: Learning-Based Autonomous UAV System for Electrical and Mechanical (E&M) Device Inspection
+  image: 2021-Sensors-Yurong.png
+  description: Sensors 
+  authors: Y. Feng; K. Tse; S. Chen; C.-Y. Wen; B. Li*
+  link:
+    url: https://www.mdpi.com/1424-8220/21/4/1385
+    display:  Sensors (2021)
+  highlight: 1
+
 - title: System Identification and Control for a Tail-sitter Unmanned Aerial Vehicle in the Cruise Flight
   description: IEEE Access
   authors: W. Zhou, S. Chen, C.-W. Chang, C.-Y. Wen, C.-K. Chen, and B. Li*

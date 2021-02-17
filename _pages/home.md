@@ -40,6 +40,9 @@ To this end, we have developed different kinds of unmanned aircraft systems incl
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/2020-Sensors-Chingwei.jpg" alt="Slide 5" />
         </div>
+        <div class="item">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/Yurong.png" alt="Slide 6" />
+        </div>
     </div>
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>

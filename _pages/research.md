@@ -22,8 +22,7 @@ permalink: /research/
 
 ### UAV-based Autonomous Infrastructure Inspection
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OKSm8_4rhzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-Learning-Based Autonomous UAV System for Electrical and Mechanical (E&M) Device Inspection, Under Review.
-
+Feng, Y.; Tse, K.; Chen, S.; Wen, C.-Y.; Li, B. Learning-Based Autonomous UAV System for Electrical and Mechanical (E&M) Device Inspection. Sensors 2021, 21, 1385. <i class="fa fa-download"></i> [Download](https://www.mdpi.com/1424-8220/21/4/1385/pdf)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9BQMSVQlo7A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 Chen S, Chen H, Zhou W, Wen CY, Li B. End-to-End UAV Simulation for Visual SLAM and Navigation. arXiv preprint arXiv:2012.00298. 2020 Dec 1.  <i class="fa fa-download"></i> [Download](https://arxiv.org/abs/2012.00298) 
 
