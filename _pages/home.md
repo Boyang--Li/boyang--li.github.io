@@ -1,12 +1,12 @@
 ---
-title: "Autonomous Aerial Vehicles Group - Home"
+title: "Autonomous Aerial Systems Group - Home"
 layout: homelay
-excerpt: "Autonomous Aerial Vehicles Group at HK PolyU"
+excerpt: "Autonomous Aerial Systems Group at HK PolyU"
 sitemap: false
 permalink: /
 ---
 
-We are a dynamic research group at [The Hong Kong Polytechnic University](http://www.polyu.edu.hk). We aim to develop autonomous aerial vehicles for applications such as infrastructure inspection, cargo delivery, search and rescue etc.
+We are a dynamic research group at [The Hong Kong Polytechnic University](http://www.polyu.edu.hk). We aim to develop autonomous aerial systems for applications such as infrastructure inspection, cargo delivery, search and rescue etc.
 
 To this end, we have developed different kinds of unmanned aircraft systems including fixed-wing, multirotor, and vertical takeoff and landing (VTOL). We are also promoting the applications of UAS to our society by improving the control, planning, and sensing performance. The general research topics of our group can be found at [Research](research).
 

@@ -1,7 +1,7 @@
 ---
 title: "AAV Group - Team"
 layout: gridlay
-excerpt: "Autonomous Aerial Vehicles Group: Team members"
+excerpt: "Autonomous Aerial Systems Group: Team members"
 sitemap: false
 permalink: /team/
 ---
