@@ -1,3 +1,12 @@
+- title: Development of a Solar-Powered Unmanned Aerial Vehicle for Extended Flight Endurance
+  image: solar.png
+  description: Drones 
+  authors: Y. Chu; C. Ho; Y. Lee; B. Li*
+  link:
+    url: https://www.mdpi.com/2504-446X/5/2/44
+    display:  Drones (2021)
+  highlight: 1
+
 - title: Learning-Based Autonomous UAV System for Electrical and Mechanical (E&M) Device Inspection
   image: 2021-Sensors-Yurong.png
   description: Sensors 
