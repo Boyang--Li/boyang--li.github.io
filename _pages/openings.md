@@ -8,10 +8,11 @@ permalink: /vacancies
 
 # Open Positions
 
-<!-- We currently don't have funding for additional PhD students. We can only welcome **exchange students**. -->
-We are always looking for new group members with passion, talent, and grit! You will have the chance to work on the grand challenges of autonomous aerial systems, such as control, planning, and navigation. You will be involved in designing new type of unmanned aircraft and unleashing the intelligent potential of aerial robotics.
+We are always looking for new group members with passion, talent, and grit! You will have the chance to work on the grand challenges of autonomous aerial systems, such as control, planning, and field tests of unmanned aircraft. You will be involved in designing new type of unmanned aircraft and unleashing the intelligent potential of aerial robotics. 
 
-## 2021/22 理大校長卓越博士生獎學金計劃
+We currently don't have funding for additional PhD students. We can only welcome you if you have **external funding** or **exchange program**.
+
+<!-- ## 2021/22 理大校長卓越博士生獎學金計劃
 香港理工大學（理大）現推出 2021/22 理大校長卓越博士生獎學金計劃，歡迎於學術及研究方面皆表現
 卓越的學生申請入讀理大的全日制博士學位課程。
 
@@ -33,7 +34,7 @@ Applicants who apply for the PolyU Presidential PhD Fellowship Scheme shall:
 - have obtained a PhD admission offer from a top university in the world (PhD admission offer with a scholarship from a top university is preferred); 
 - and demonstrate outstanding qualities of academic performance and research ability (supporting documents should be submitted together with the online application).
 
-[Details](https://www.polyu.edu.hk/gs/prospective-students/presidential-phd-fellowship/)
+[Details](https://www.polyu.edu.hk/gs/prospective-students/presidential-phd-fellowship/) -->
 
 
 

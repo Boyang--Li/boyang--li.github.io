@@ -13,7 +13,7 @@ permalink: /research/
 1. Development of novel UAV/UAS configurations such as vertical takeoff and landing (VTOL) tail-sitter;
 2. Application of advanced control theories such as model predictive control (MPC) to improve the flight performance;
 3. Robotic path/trajectory optimization to improve the autonomous level and efficiency;
-4. field experiments of aerial/underwater/ground mobile robotic systems.
+4. Field experiments of aerial/underwater/ground mobile robotic systems.
 
 ## Group Github
 [UAV Lab - HKPolyU](https://github.com/HKPolyU-UAV)

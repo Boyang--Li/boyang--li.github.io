@@ -1,6 +1,6 @@
 - name: Boyang Li
   photo: boyang.jpg
-  info: Research Assistant Professor
+  info:  <a href="https://www.polyu.edu.hk/aae/people/academic-staff/dr-li-boyang/">Research Assistant Professor</a>
   email: bo-yang.li@polyu.edu.hk
   number_educ: 3
   education1: PhD, The Hong Kong Polytechnic University, 2018
@@ -9,7 +9,7 @@
 
 - name: Chih-Yung Wen
   photo: cywen.jpg
-  info: Professor
+  info: <a href="https://www.polyu.edu.hk/aae/people/academic-staff/ir-prof-cy-wen/">Chair Professor</a>
   email: cywen@polyu.edu.hk
   number_educ: 3
   education1: PhD, California Institute of Technology, 1994
