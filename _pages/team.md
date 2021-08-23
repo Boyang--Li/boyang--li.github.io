@@ -8,13 +8,13 @@ permalink: /team/
 
 # Group Members
 
-<!-- **We are  looking for new Research Assistant, Postdoc, or MSc students to join the team**   -->
+<!-- **We are  looking for new Research Assistant, Postdoc, or MSc students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies)  -->
 
-**We are working closely with the [PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html) supervised by Prof Chih-Yung Wen [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies).**
+**We are working closely with the [PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html) supervised by Prof Chih-Yung Wen.**
 
 <!-- Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
 
-## Academic Staff
+## Supervisors
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -76,7 +76,7 @@ permalink: /team/
 </div>
 {% endif %}
 
-## Research Personnel
+<!-- ## Research Personnel
 {% assign number_printed = 0 %}
 {% for member in site.data.researchers %}
 
@@ -129,9 +129,9 @@ permalink: /team/
 {% assign even_odd = number_printed | modulo: 2 %}
 {% if even_odd == 1 %}
 </div>
-{% endif %}
+{% endif %} -->
 
-## Students
+## Research Personnel
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
 
