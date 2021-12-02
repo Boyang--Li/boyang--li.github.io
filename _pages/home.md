@@ -8,9 +8,9 @@ permalink: /
 
 We are a dynamic research group at [The Hong Kong Polytechnic University](http://www.polyu.edu.hk). We aim to develop autonomous aerial systems for applications such as infrastructure inspection, cargo delivery, search and rescue etc.
 
-To this end, we have developed different kinds of unmanned aircraft systems including fixed-wing, multirotor, and vertical takeoff and landing (VTOL). We are also promoting the applications of UAS to our society by improving the control, planning, and sensing performance. The general research topics of our group can be found at [Research](research).
+To this end, we have developed different kinds of unmanned aircraft systems including fixed-wing, multi-rotor, and vertical takeoff and landing (VTOL). We are promoting the applications of UAS to our society by improving the control, planning, and sensing performance. We are also working on the general unmanned systems such as unmanned ground vehicle (UGV) and unmanned underwater vehicle (UUV) closely with our partners. The general research topics of our group can be found at [Research](research).
 
-**If you are interested to join our group, please check** [Vancancies]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
+**If you are interested to join our group, please check** [Vacancies]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
 
 <div markdown="0" id="carousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="hover" >
     <!-- Menu -->
@@ -32,7 +32,7 @@ To this end, we have developed different kinds of unmanned aircraft systems incl
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/strike1.jpg" alt="Slide 2" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/2019-TAE-Jingxuan.jpg" alt="Slide 3" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/solar_UAV.png" alt="Slide 3" />
         </div>
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/rov0.jpg" alt="Slide 4" />

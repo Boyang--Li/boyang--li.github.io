@@ -10,10 +10,10 @@ permalink: /vacancies
 
 We are always looking for new group members with passion, talent, and grit! You will have the chance to work on the grand challenges of autonomous aerial systems, such as control, planning, and field tests of unmanned aircraft. You will be involved in designing new type of unmanned aircraft and unleashing the intelligent potential of aerial robotics. 
 
-### Exchange PhD students
-**[NEWS!]** We have openings to receive **exchange PhD student** by PolyU Research Student Attachment Programme. If you are currently a PhD student from the related areas, you are welcome to read the [Guideline](/downloads/Guideline(Incoming).pdf) and send your CV and [application form](/downloads/Form GSB51.doc) to me by *5 November 2021*.
+<!-- ### Exchange PhD students
+**[NEWS!]** We have openings to receive **exchange PhD student** by PolyU Research Student Attachment Programme. If you are currently a PhD student from the related areas, you are welcome to read the [Guideline](/downloads/Guideline(Incoming).pdf) and send your CV and [application form](/downloads/Form GSB51.doc) to me by *5 November 2021*. -->
 
-<!-- We currently don't have funding for additional PhD students. We can only welcome you if you have **external funding** or **exchange program**. -->
+We currently don't have funding for additional PhD students. We can only welcome you if you have **external funding** or **exchange program**.
 
 <!-- ## 2021/22 理大校長卓越博士生獎學金計劃
 香港理工大學（理大）現推出 2021/22 理大校長卓越博士生獎學金計劃，歡迎於學術及研究方面皆表現

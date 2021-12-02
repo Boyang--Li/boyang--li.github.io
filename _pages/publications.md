@@ -7,9 +7,9 @@ permalink: /publications/
 ---
 
 # Publications
+**Please visit my [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ) or [ORCiD](https://orcid.org/0000-0002-6900-0901) for a full list**
 
 ## Research Highlights
-**(Please visit [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ) or [ORCiD](https://orcid.org/0000-0002-6900-0901) for a full list)**
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.publist %}
@@ -49,7 +49,7 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
-
+<!-- 
 ## Selected Publications
 
 {% for publi in site.data.publist %}
@@ -57,4 +57,4 @@ permalink: /publications/
   {{ publi.title }} <br />
   <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
 
-{% endfor %}
+{% endfor %} -->
