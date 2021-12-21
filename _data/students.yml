@@ -24,6 +24,13 @@
   education1: MSc, The Hong Kong Polytechnic University, 2020
   education2: B.Eng, The Hong Kong Polytechnic University, 2018
 
+- name: Yefeng Yang (楊燁峰)
+  photo: yefeng.jpg
+  info: PhD Student (Co-supervised)
+  email: yefeng.yang@connect.polyu.hk
+  number_educ: 1
+  education1: B.Eng, Harbin Institute of Technology, 2017
+  
 - name: Wenyu Yang (楊雯語)
   photo: wenyu.jpg
   info: Research Assistant
@@ -32,19 +39,26 @@
   education1: M.Eng, Harbin Institute of Technology, 2021
   education2: B.Eng, Ocean University of China, 2019
 
-- name: Yefeng Yang (楊燁峰)
-  photo: yefeng.jpg
-  info: PhD Student (Co-supervised)
-  email: yefeng.yang@connect.polyu.hk
-  number_educ: 1
-  education1: B.Eng, Harbin Institute of Technology, 2017
-
 - name: Ho Wang Tong (Canning)
   photo: TongHoWang.png
   info: MPhil Student 
   email: canning.tong@connect.polyu.hk
   number_educ: 1
   education1: B.Eng, The Hong Kong Polytechnic University, 2021
+
+- name: Haochen Hu
+  photo: haochen.jpg
+  info: MSc Student 
+  email: hao-chen.hu@connect.polyu.hk
+  number_educ: 1
+  education1: B.Eng, Nanjing University of Aeronautics and Astronautics, 2019
+
+- name: Lan Xiangke
+  photo: xiangke.jpg
+  info: MSc Student 
+  email: xiangke.lan@connect.polyu.hk
+  number_educ: 1
+  education1: B.Eng, Harbin University of Science and Technology, 2021
 
 - name: Mughees Ahmad
   photo: Mughees.jpeg
