@@ -8,12 +8,7 @@ permalink: /teaching
 
 # Teaching
 
-<!-- ### 2021 Autumn
-AAE4202 - Electronics & Information Technologies for Unmanned Aircraft Systems  -->
-### 2022 Spring
-ME578 – Aircraft Design 
-
-### 2021 Spring
+### 2021, 2022 Spring
 ME578 – Aircraft Design <i class="fa fa-download"></i> [Syllabus](/downloads/ME578_Teaching_Schedule.pdf) 
 
 ### 2020 Autumn
