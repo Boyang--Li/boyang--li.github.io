@@ -1,11 +1,11 @@
 - title: Secondary School Visit
   image: highschool.jpg
-- title: AST Technology Award
-  image: asm.jpg
 - title: Solar-power UAV
   image: IMG_6925.jpg
 - title: AAE4202 Lab
   image: 4202lab.jpg
+- title: AAE4202 Lab
+  image: quadrotor.jpg
 - title: Pilot Training
   image: 0914-2.jpg
 - title: AIAA DBF
@@ -14,8 +14,12 @@
   image: 1012-2.jpg
 - title: AIAA DBF
   image: 1012-6.jpg
+- title: Airport
+  image: airport.jpg
 # - title: Pilot Training
 #   image: 0914-1.jpg
+- title: AST Technology Award
+  image: asm.jpg
 - title: Pilot Training
   image: 0914-3.jpg
 
