@@ -66,8 +66,9 @@ From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 From the [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/sust.jpg" width="32%">
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="32%">
+<!-- <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="32%"> -->
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3720.JPG" width="32%"> -->
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_0953.jpg" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3232.JPG" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition2.jpg" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition3.jpg" width="32%">

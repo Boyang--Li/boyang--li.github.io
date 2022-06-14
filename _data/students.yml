@@ -39,12 +39,27 @@
   education1: M.Eng, Harbin Institute of Technology, 2021
   education2: B.Eng, Ocean University of China, 2019
 
+- name: Qihang Peng (彭啟航)
+  photo: Qihang.jpg
+  info: Research Assistant
+  email: qihang.peng@polyu.edu.hk
+  number_educ: 2
+  education1: M.Eng, University of Southern California, 2020
+  education2: B.Eng, University of Electronic Science and Technology of China, 2018
+
 - name: Ho Wang Tong (Canning)
   photo: TongHoWang.png
   info: MPhil Student 
   email: canning.tong@connect.polyu.hk
   number_educ: 1
   education1: B.Eng, The Hong Kong Polytechnic University, 2021
+
+- name: Yang Hu (胡陽)
+  photo: Yang_Hu.jpg
+  info: MPhil Student 
+  email: yanghu@polyu.edu.hk
+  number_educ: 1
+  education1: B.Eng, The University of Sydney, 2022
 
 - name: Haochen Hu (胡昊琛)
   photo: haochen.jpg
@@ -60,24 +75,18 @@
   number_educ: 1
   education1: B.Eng, Harbin University of Science and Technology, 2021
 
-- name: Yang Hu (胡陽)
-  photo: Yang_Hu.jpg
-  info: Student Assistant
-  email: yanghu@polyu.edu.hk
-  number_educ: 1
-  education1: B.Eng, The University of Sydney, 2022
 
-- name: Mughees Ahmad
-  photo: Mughees.jpeg
-  info: Student Assistant
-  email: mughees.ahmad@connect.polyu.hk
-  number_educ: 1
-  education1: Year 4, The Hong Kong Polytechnic University
+# - name: Mughees Ahmad
+#   photo: Mughees.jpeg
+#   info: Student Assistant
+#   email: mughees.ahmad@connect.polyu.hk
+#   number_educ: 1
+#   education1: Year 4, The Hong Kong Polytechnic University
 
-- name: Yuling Cheng (程鈺棱)
-  photo: yuling.jpg
-  info: Undergraduate Research and Innovation Scheme
-  email: yuling.cheng@connect.polyu.hk
-  number_educ: 1
-  education1: Year 2, The Hong Kong Polytechnic University
+# - name: Yuling Cheng (程鈺棱)
+#   photo: yuling.jpg
+#   info: Undergraduate Research and Innovation Scheme
+#   email: yuling.cheng@connect.polyu.hk
+#   number_educ: 1
+#   education1: Year 2, The Hong Kong Polytechnic University
 
