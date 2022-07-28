@@ -55,7 +55,7 @@ From [The Soft Systems Group](https://softsystemsgroup.com/).
 </figure>
 
 ## Postdoc @ NTU
-From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
+From [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/ATMRI/DSC08906.JPG" width="35%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/ATMRI/coffee.jpg" width="30%">
@@ -63,17 +63,17 @@ From the [Air Traffic Management Research Institute](atmri.ntu.edu.sg).
 </figure>
 
 ## PhD Study @ PolyU
-From the [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).
+From [High-speed Thermo-fluid and MAV/UAV Laboratory](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).
 <figure>
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/sust.jpg" width="32%">
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3809.JPG" width="32%"> -->
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3720.JPG" width="32%"> -->
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_0953.jpg" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/IMG_3232.JPG" width="32%">
-<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition2.jpg" width="32%">
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition3.jpg" width="32%">
 <!-- <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition4.jpg" width="32%"> -->
 <img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/taiwan_competition5.jpg" width="32%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/PolyU/pilot2.jpg" width="25%">
 </figure>
 
 <!-- ## Old-time @ NPU
