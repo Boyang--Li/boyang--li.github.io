@@ -26,10 +26,10 @@ To this end, we have developed different kinds of unmanned aircraft systems incl
     <!-- Items -->
     <div class="carousel-inner" markdown="0">
         <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/jiajia1.jpg" alt="Slide 1" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/jiajia1.jpg" alt="Slide 0" />
         </div>
-        <div class="item active">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/arkbird_tailsitter.jpg" alt="Slide 5" />
+        <div class="item ">
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/arkbird_tailsitter.jpg" alt="Slide 1" />
         </div>
         <div class="item">
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/strike1.jpg" alt="Slide 2" />
@@ -38,10 +38,10 @@ To this end, we have developed different kinds of unmanned aircraft systems incl
             <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/solar_UAV.png" alt="Slide 3" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/Yurong.png" alt="Slide 6" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/Yurong.png" alt="Slide 4" />
         </div>
         <div class="item">
-            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/rov0.jpg" alt="Slide 4" />
+            <img src="{{ site.url }}{{ site.baseurl }}/images/slider7001400/rov0.jpg" alt="Slide 5" />
         </div>
     </div>
   <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
