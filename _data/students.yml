@@ -57,7 +57,7 @@
 
 - name: Ho Wang Tong (Canning)
   photo: TongHoWang.png
-  info: PhD Student 
+  info: PhD Student (Co-supervise)
   email: canning.tong@connect.polyu.hk
   number_educ: 1
   education1: B.Eng, The Hong Kong Polytechnic University, 2021
@@ -72,7 +72,7 @@
 
 - name: Yang Hu (胡陽)
   photo: Yang_Hu.jpg
-  info: MPhil Student 
+  info: MPhil Student (Co-supervise)
   email: yang-h.hu@connect.polyu.hk
   number_educ: 1
   education1: B.Eng, The University of Sydney, 2022
@@ -86,24 +86,10 @@
 
 - name: Haochen Hu (胡昊琛)
   photo: haochen.jpg
-  info: MSc Student 
+  info: PhD Student (Co-supervise)
   email: hao-chen.hu@connect.polyu.hk
-  number_educ: 1
-  education1: B.Eng, Nanjing University of Aeronautics and Astronautics, 2019
-
-- name: Xiangke Lan (蘭祥珂)
-  photo: xiangke.jpg
-  info: MSc Student 
-  email: xiangke.lan@connect.polyu.hk
-  number_educ: 1
-  education1: B.Eng, Harbin University of Science and Technology, 2021
-
-# - name: Yuling Cheng (程鈺棱)
-#   photo: yuling.jpg
-#   info: Undergraduate Research and Innovation Scheme
-#   email: yuling.cheng@connect.polyu.hk
-#   number_educ: 1
-#   education1: Year 3, The Hong Kong Polytechnic University
-
+  number_educ: 2
+  education1: MSc, The Hong Kong Polytechnic University, 2020
+  education2: B.Eng, Nanjing University of Aeronautics and Astronautics, 2019
 
 

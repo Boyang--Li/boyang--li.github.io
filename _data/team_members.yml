@@ -1,20 +1,20 @@
 - name: Dr Boyang Li (李博揚)
   photo: boyang.jpg
-  info:  <a href="https://www.polyu.edu.hk/aae/people/academic-staff/dr-li-boyang/">Research Assistant Professor</a>
-  email: bo-yang.li@polyu.edu.hk
-  number_educ: 3
+  info:  <a href="https://www.newcastle.edu.au/school/engineering">Lecturer (Assisstant Professor)</a>
+  email: boyang.li@newcastle.edu.au
+  number_educ: 0
   education1: PhD, The Hong Kong Polytechnic University, 2018
   education2: M.Eng, Northwestern Polytechnical University, 2015
   education3: B.Eng, Northwestern Polytechnical University, 2012
 
-- name: Prof. Chih-Yung Wen (溫志湧)
-  photo: cywen.jpg
-  info: <a href="https://www.polyu.edu.hk/aae/people/academic-staff/ir-prof-cy-wen/">Chair Professor</a>
-  email: cywen@polyu.edu.hk
-  number_educ: 3
-  education1: PhD, California Institute of Technology, 1994
-  education2: M.Sc, California Institute of Technology, 1989
-  education3: B.Sc, National Taiwan University, 1986
+# - name: Prof. Chih-Yung Wen (溫志湧)
+#   photo: cywen.jpg
+#   info: <a href="https://www.polyu.edu.hk/aae/people/academic-staff/ir-prof-cy-wen/">Chair Professor</a>
+#   email: cywen@polyu.edu.hk
+#   number_educ: 3
+#   education1: PhD, California Institute of Technology, 1994
+#   education2: M.Sc, California Institute of Technology, 1989
+#   education3: B.Sc, National Taiwan University, 1986
 
 # - name: Milan P Allan
 #   photo: Milan.jpg

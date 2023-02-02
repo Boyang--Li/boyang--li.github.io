@@ -6,7 +6,7 @@ sitemap: false
 permalink: /
 ---
 
-We are a dynamic research group at [The Hong Kong Polytechnic University](http://www.polyu.edu.hk). We aim to develop autonomous aerial systems for applications such as infrastructure inspection, cargo delivery, search and rescue etc.
+We are a dynamic research group at [The University of Newcastle, NSW](https://www.newcastle.edu.au/). We aim to develop autonomous aerial systems for applications such as infrastructure inspection, cargo delivery, search and rescue etc.
 
 To this end, we have developed different kinds of unmanned aircraft systems including fixed-wing, multi-rotor, and vertical takeoff and landing (VTOL). We are promoting the applications of UAS to our society by improving the control, planning, and sensing performance. We are also working on the general unmanned systems such as unmanned ground vehicle (UGV) and unmanned underwater vehicle (UUV) closely with our partners. The general research topics of our group can be found at [Research](research).
 
@@ -55,7 +55,7 @@ To this end, we have developed different kinds of unmanned aircraft systems incl
 </div>
 
 <figure class="fourth">
-  <a href="https://www.polyu.edu.hk/"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/polyu-logo.png" style="width: 210px"></a>
-  <a href="https://www.polyu.edu.hk/aae"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/aaelogo2.png" style="width: 210px"></a>
+  <a href="https://www.newcastle.edu.au/"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/the-university-of-newcastle-australia-vector-logo.png" style="width: 210px"></a>
+  <!-- <a href="https://www.polyu.edu.hk/aae"> <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/aaelogo2.png" style="width: 210px"></a> -->
 </figure>
 

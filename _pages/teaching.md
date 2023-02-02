@@ -8,10 +8,14 @@ permalink: /teaching
 
 # Teaching
 
-### 2021, 2022 Spring
-ME578 – Aircraft Design <i class="fa fa-download"></i> [Syllabus](/downloads/ME578_Teaching_Schedule.pdf) 
+### 2023 
+AERO3000 - Flight Dynamics <i class="fa fa-link"></i> [Syllabus](https://www.newcastle.edu.au/course/AERO3000) 
 
-### 2020 Autumn
+
+### 2021, 2022 
+ME578 - Aircraft Design <i class="fa fa-download"></i> [Syllabus](/downloads/ME578_Teaching_Schedule.pdf) 
+
+### 2020 
 AAE4202 - Electronics & Information Technologies for Unmanned Aircraft Systems <i class="fa fa-download"></i> [Syllabus](/downloads/AAE4202_Teaching_Schedule.pdf) 
 
 <!-- <table style="width:30%">

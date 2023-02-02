@@ -10,11 +10,11 @@ permalink: /team/
 
 <!-- **We are  looking for new Research Assistant, Postdoc, or MSc students to join the team** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies)  -->
 
-**We are working closely with the [PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html) supervised by Prof Chih-Yung Wen.**
+
 
 <!-- Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-students), [alumni](#alumni), [administrative support](#administrative-support), [lab visitors](#lab-visitors). -->
 
-## Supervisors
+## Supervisor
 {% assign number_printed = 0 %}
 {% for member in site.data.team_members %}
 
@@ -132,6 +132,7 @@ permalink: /team/
 {% endif %} -->
 
 ## Research Personnel
+**We are working closely with the [HK PolyU HTML Group](https://www.polyu.edu.hk/researchgrp/cywen/index.php/en/index.html).**
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
 
