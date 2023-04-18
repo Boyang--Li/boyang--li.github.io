@@ -8,15 +8,15 @@
 #  education3:
 #  education4:
 
-- name: Yurong Feng (馮毓榕)
-  photo: fengyurong.jpg
-  info: PhD Student (Co-supervise)
-  email: yu-rong.feng@connect.polyu.hk
-  number_educ: 2
-  education1: MSc, The Hong Kong Polytechnic University, 2020
-  education2: B.Eng, Xi’an Jiaotong University, 2018
+# - name: Yurong Feng (馮毓榕)
+#   photo: fengyurong.jpg
+#   info: PhD Student (Co-supervise)
+#   email: yu-rong.feng@connect.polyu.hk
+#   number_educ: 2
+#   education1: MSc, The Hong Kong Polytechnic University, 2020
+#   education2: B.Eng, Xi’an Jiaotong University, 2018
 
-- name: Bailun Jiang (姜百倫)
+- name: Bailun Jiang #(姜百倫)
   photo: bailun.png
   info: PhD Student (Co-supervise)
   email: bai-lun.jiang@connect.polyu.hk
@@ -24,7 +24,7 @@
   education1: MSc, The Hong Kong Polytechnic University, 2020
   education2: B.Eng, The Hong Kong Polytechnic University, 2018
 
-- name: Yefeng Yang (楊燁峰)
+- name: Yefeng Yang #(楊燁峰)
   photo: yefeng.jpg
   info: PhD Student (Co-supervise)
   email: yefeng.yang@connect.polyu.hk
@@ -32,7 +32,7 @@
   education2: Joint-PhD program, Harbin Engineering University
   education1: B.Eng, Harbin Institute of Technology, 2017
   
-- name: Wenyu Yang (楊雯語)
+- name: Wenyu Yang #(楊雯語)
   photo: wenyu.jpg
   info: PhD Student (Co-supervise)
   email: allen.yang@connect.polyu.hk
@@ -40,7 +40,7 @@
   education1: M.Eng, Harbin Institute of Technology, 2021
   education2: B.Eng, Ocean University of China, 2019
 
-- name: Qihang Peng (彭啟航)
+- name: Qihang Peng #(彭啟航)
   photo: Qihang.jpg
   info: PhD Student (Co-supervise)
   email: qihang1.peng@connect.polyu.hk
@@ -48,7 +48,7 @@
   education1: MSc, University of Southern California, 2020
   education2: B.Eng, University of Electronic Science and Technology of China, 2018
 
-- name: Li-yu Lo (羅立宇)
+- name: Li-yu Lo #(羅立宇)
   photo: Pat.png
   info: PhD Student (Co-supervise)
   email: 7086854d@connect.polyu.hk
@@ -62,7 +62,7 @@
   number_educ: 1
   education1: B.Eng, The Hong Kong Polytechnic University, 2021
 
-- name: Tao Huang (黃濤) 
+- name: Tao Huang #(黃濤) 
   photo: Tao.png
   info: PhD Student (Co-supervise)
   email: tao755.huang@connect.polyu.hk
@@ -70,7 +70,7 @@
   education1: Joint-PhD program, Harbin Institute of Technology
   education2: B.Eng,Harbin Engineering University , 2018
 
-- name: Yang Hu (胡陽)
+- name: Yang Hu #(胡陽)
   photo: Yang_Hu.jpg
   info: MPhil Student (Co-supervise)
   email: yang-h.hu@connect.polyu.hk
@@ -84,7 +84,7 @@
   number_educ: 1
   education1: B.Eng, The Hong Kong Polytechnic University, 2022
 
-- name: Haochen Hu (胡昊琛)
+- name: Haochen Hu #(胡昊琛)
   photo: haochen.jpg
   info: PhD Student (Co-supervise)
   email: hao-chen.hu@connect.polyu.hk
