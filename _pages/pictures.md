@@ -6,7 +6,10 @@ permalink: /pictures/
 ---
 
 <!-- # Gallery -->
-## Professor @ PolyU
+## Lecturer @ UoN
+Coming soon ...
+
+## Reserach Assistant Professor @ PolyU
 
 {% assign number_printed = 0 %}
 {% for pic in site.data.pictures_poly2 %}

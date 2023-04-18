@@ -11,13 +11,14 @@ permalink: /research/
 ## Research fields
 1. Development of novel UAV/UAS configurations such as vertical takeoff and landing (VTOL) tail-sitter;
 2. Application of advanced control theories such as model predictive control (MPC) to improve the flight performance;
-3. Robotic path/trajectory optimization to improve the autonomous level and efficiency;
-4. Field experiments of aerial/underwater/ground mobile robotic systems.
-
-## Group Github
-[UAV Lab - HKPolyU](https://github.com/HKPolyU-UAV)
+3. Robot localization and path planning to improve the autonomous level and efficiency;
+4. Field experiments of mobile robotic systems.
 
 ## Research videos
+
+### Hybrid Aerodynamics-Based MPC for a Tail-Sitter UAV
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GLJdBFR3OvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Lo, L.-Y.; Yiu, C.H.; Tang, Y.; Yang, A.-S.; Li, B.; Wen, C.-Y. Dynamic Object Tracking on Autonomous UAV System for Surveillance Applications. Sensors 2021, 21, 7888. <i class="fa fa-download"></i> [Download](https://www.mdpi.com/1424-8220/21/23/7888/pdf) -->
 
 ### Dynamic Object Tracking on Autonomous UAV System
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tY16YnZQoB4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -50,3 +51,6 @@ Sun, J.; Li, B.; Jiang, Y.; Wen, C.-Y.	A Camera-Based Target Detection and Posit
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HxN0oafNmzw" frameborder="0" allowfullscreen></iframe>
 Li, B.; Jiang, Y.; Sun, J.; Cai, L.; Wen, C.-Y. Development and Testing of a Two-UAV Communication Relay System. Sensors 2016, 16, 1696. 
 <i class="fa fa-download"></i> [Download](http://www.mdpi.com/1424-8220/16/10/1696/pdf) 
+
+## Group Github
+[AIRO-LAB](https://github.com/HKPolyU-UAV)
