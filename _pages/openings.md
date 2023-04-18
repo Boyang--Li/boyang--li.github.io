@@ -13,7 +13,7 @@ We are always looking for new group members with passion, talent, and grit! You 
 <!-- ### Exchange PhD students
 **[NEWS!]** We have openings to receive **exchange PhD student** by PolyU Research Student Attachment Programme. If you are currently a PhD student from the related areas, you are welcome to read the [Guideline](/downloads/Guideline(Incoming).pdf) and send your CV and [application form](/downloads/Form GSB51.doc) to me by *5 November 2021*. -->
 
-We currently don't have funding for additional PhD students. We can only welcome you if you have **external funding** or **exchange program**.
+We currently don't have funding for additional PhD students or RAs. We can only welcome you if you have **external funding** or **exchange program**.
 
 <!-- ## 2021/22 理大校長卓越博士生獎學金計劃
 香港理工大學（理大）現推出 2021/22 理大校長卓越博士生獎學金計劃，歡迎於學術及研究方面皆表現
@@ -60,8 +60,8 @@ Applicants who apply for the PolyU Presidential PhD Fellowship Scheme shall:
 <!-- ### Applications for PhD and Postdoc positions
 If you are interested in working with us as a PhD student or postdoc, please send me an [email](mailto:milan.allan@gmail.com). State briefly why you are interested and attach a CV, including information about the grades you had as an undergraduate. No need for a separate cover letter or certificates. **Important**: please insert _"Application PhD"_ or _"Application Postdoc"_ in the subject line. If you are applying to a specific advertisement, note this in your email. -->
 
-### MSc projects for PolyU students
-If you are a Master student at PolyU looking for a Master project, contact me per email or stop by my office.
+<!-- ### MSc projects for PolyU students
+If you are a Master student at PolyU looking for a Master project, contact me per email or stop by my office. -->
 
 <!-- ### Bsc / Master students from elsewhere
 If you are interested in pursuing a Master degree at Leiden University, see [mastersinleiden.nl](http://www.mastersinleiden.nl/programmes/physics/en/introduction). Sometimes, we take master students or summer interns if we get exceptional applicants (this usually means very good grades and a personal recommendation). -->

@@ -8,14 +8,17 @@ permalink: /teaching
 
 # Teaching
 
-### 2023 
+### 2023 (UoN)
+AERO2000 - Aircraft Performance and Operations <i class="fa fa-link"></i> [Syllabus](https://www.newcastle.edu.au/course/AERO2000) 
+
 AERO3000 - Flight Dynamics <i class="fa fa-link"></i> [Syllabus](https://www.newcastle.edu.au/course/AERO3000) 
 
+AERO4600 - Automatic Flight Control Systems <i class="fa fa-link"></i> [Syllabus](https://www.newcastle.edu.au/course/AERO4600) 
 
-### 2021, 2022 
+### 2021, 2022 (PolyU)
 ME578 - Aircraft Design <i class="fa fa-download"></i> [Syllabus](/downloads/ME578_Teaching_Schedule.pdf) 
 
-### 2020 
+### 2020 (PolyU)
 AAE4202 - Electronics & Information Technologies for Unmanned Aircraft Systems <i class="fa fa-download"></i> [Syllabus](/downloads/AAE4202_Teaching_Schedule.pdf) 
 
 <!-- <table style="width:30%">
