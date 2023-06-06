@@ -7,7 +7,7 @@
 
 # Site settings
 title: Autonomous Aerial Systems Group
-email: boyang.li@connect.polyu.hk
+email: boyang.li@newcastle.edu.au
 description: Website of Boyang's Research Group
 baseurl: ""
 url: ""
@@ -40,7 +40,7 @@ kramdown:
 
 social:
   GitHub: https://github.com/boyang--li || github
-  E-Mail: mailto:lbynwpu@gmail.com || envelope
+  E-Mail: mailto:boyang.li@newcastle.edu.au|| envelope
   Linkedin: https://www.linkedin.com/in/boyang-li-10398480 || linkedin
 
 links:
@@ -49,4 +49,4 @@ links:
 
 # Google Analytics
   google_analytics:
-  tracking_id: UA-69834901-1
+  tracking_id: G-ZH0R7JZ1E7
