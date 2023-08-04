@@ -22,6 +22,22 @@
   number_educ: 1
   education1: B.Eng, Harbin University of Science and Technology, 2021
 
+- name: Haochen Hu #(胡昊琛)
+  photo: haochen.jpg
+  info: MSc Student
+  email: hao-chen.hu@connect.polyu.hk
+  number_educ: 2
+  education1: MSc, The Hong Kong Polytechnic University, 2020
+  education2: B.Eng, Nanjing University of Aeronautics and Astronautics, 2019
+
+# - name: Yurong Feng (馮毓榕)
+#   photo: fengyurong.jpg
+#   info: PhD Student (Co-supervise)
+#   email: yu-rong.feng@connect.polyu.hk
+#   number_educ: 2
+#   education1: MSc, The Hong Kong Polytechnic University, 2020
+#   education2: B.Eng, Xi’an Jiaotong University, 2018
+
 # - name: Yuling Cheng (程鈺棱)
 #   photo: yuling.jpg
 #   info: Undergraduate Research and Innovation Scheme
