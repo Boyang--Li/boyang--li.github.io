@@ -8,6 +8,14 @@
 #  education3:
 #  education4:
 
+
+- name: Thomas Jones
+  photo: thomas.png
+  info: Research Assistant
+  email: Thomas.Jones@uon.edu.au
+  number_educ: 1
+  education1: Final year student, The University of Newcastle
+
 - name: Bailun Jiang #(姜百倫)
   photo: bailun.png
   info: PhD Student (Co-supervise)
@@ -64,7 +72,7 @@
 
 - name: Yang Hu #(胡陽)
   photo: Yang_Hu.jpg
-  info: MPhil Student (Co-supervise)
+  info: PhD Student (Co-supervise)
   email: yang-h.hu@connect.polyu.hk
   number_educ: 1
   education1: B.Eng, The University of Sydney, 2022
