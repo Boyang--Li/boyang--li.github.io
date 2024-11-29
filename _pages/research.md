@@ -15,6 +15,8 @@ permalink: /research/
 4. Field experiments of mobile robotic systems.
 
 ## Research videos
+###  A Non-Robocentric Framework for UAV Dynamic Landing 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7wiCh46MQmc?si=lQPUrn__o6stty1U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Hybrid Aerodynamics-Based MPC for a Tail-Sitter UAV
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GLJdBFR3OvU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
