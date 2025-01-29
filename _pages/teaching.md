@@ -8,7 +8,7 @@ permalink: /teaching
 
 # Teaching
 
-### 2023 - (UoN)
+### 2023 - now (UoN)
 AERO2000 - Aircraft Performance and Operations <i class="fa fa-link"></i> [Syllabus](https://www.newcastle.edu.au/course/AERO2000) 
 
 AERO3000 - Flight Dynamics <i class="fa fa-link"></i> [Syllabus](https://www.newcastle.edu.au/course/AERO3000) 

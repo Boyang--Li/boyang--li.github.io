@@ -7,9 +7,13 @@ permalink: /pictures/
 
 <!-- # Gallery -->
 ## Lecturer @ UoN
-Coming soon ...
+<figure>
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UoN/UoNUoW_1.jpg" width="20%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UoN/UoNUoW_2.jpg" width="46%">
+<img src="{{ site.url }}{{ site.baseurl }}/images/picpic/UoN/UoNUoW_3.jpg" width="30%">
+</figure>
 
-## Reserach Assistant Professor @ PolyU
+## Research Assistant Professor @ PolyU
 
 {% assign number_printed = 0 %}
 {% for pic in site.data.pictures_poly2 %}

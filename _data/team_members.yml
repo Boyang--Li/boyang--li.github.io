@@ -2,10 +2,9 @@
   photo: boyang.jpg
   info:  <a href="https://www.newcastle.edu.au/profile/boyang-li">Lecturer in Aerospace Systems Engineering</a>
   email: boyang.li@newcastle.edu.au
-  number_educ: 0
+  number_educ: 2
   education1: PhD, The Hong Kong Polytechnic University, 2018
-  education2: M.Eng, Northwestern Polytechnical University, 2015
-  education3: B.Eng, Northwestern Polytechnical University, 2012
+  education2: B.Eng, M.Eng, Northwestern Polytechnical University, 2012, 2015
 
 # - name: Prof. Chih-Yung Wen (溫志湧)
 #   photo: cywen.jpg
