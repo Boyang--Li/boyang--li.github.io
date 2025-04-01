@@ -8,6 +8,30 @@
 #   education2: Master thesis at Leiden University with <a href="https://www.physics.leidenuniv.nl/vanruitenbeek">Jan van Ruitenbeek</a>
 #   education3: PhD Leiden University!
 
+
+- name: Bailun Jiang #(姜百倫)
+  photo: bailun.png
+  info: PhD Student (Co-supervise)
+  email: bai-lun.jiang@connect.polyu.hk
+  number_educ: 2
+  education1: MSc, The Hong Kong Polytechnic University, 2020
+  education2: B.Eng, The Hong Kong Polytechnic University, 2018
+
+- name: Yefeng Yang #(楊燁峰)
+  photo: yefeng.jpg
+  info: PhD Student (Co-supervise)
+  email: yefeng.yang@connect.polyu.hk
+  number_educ: 2
+  education2: Joint-PhD program, Harbin Engineering University
+  education1: B.Eng, Harbin Institute of Technology, 2017
+  
+- name: Li-yu Lo #(羅立宇)
+  photo: Pat.png
+  info: MPhil Student (Co-supervise)
+  email: 7086854d@connect.polyu.hk
+  number_educ: 1
+  education1: B.Eng, The Hong Kong Polytechnic University, 2021
+
 - name: Yang Hu #(胡陽)
   photo: Yang_Hu.jpg
   info: MPhil Student (Co-supervise)
