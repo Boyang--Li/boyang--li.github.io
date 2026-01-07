@@ -8,6 +8,28 @@
 #   education2: Master thesis at Leiden University with <a href="https://www.physics.leidenuniv.nl/vanruitenbeek">Jan van Ruitenbeek</a>
 #   education3: PhD Leiden University!
 
+- name: Wenyu Yang #(楊雯語)
+  photo: wenyu.jpg
+  info: PhD Student (Co-supervise)
+  email: allen.yang@connect.polyu.hk
+  number_educ: 2
+  education1: M.Eng, Harbin Institute of Technology, 2021
+  education2: B.Eng, Ocean University of China, 2019
+
+- name: Ho Wang Tong (Canning)
+  photo: TongHoWang.png
+  info: PhD Student (Co-supervise)
+  email: canning.tong@connect.polyu.hk
+  number_educ: 1
+  education1: B.Eng, The Hong Kong Polytechnic University, 2021
+
+- name: Tao Huang #(黃濤) 
+  photo: Tao.png
+  info: PhD Student (Co-supervise)
+  email: tao755.huang@connect.polyu.hk
+  number_educ: 2
+  education1: Joint-PhD program, Harbin Institute of Technology
+  education2: B.Eng, Harbin Engineering University, 2018
 
 - name: Bailun Jiang #(姜百倫)
   photo: bailun.png
@@ -39,12 +61,12 @@
   number_educ: 1
   education1: B.Eng, The University of Sydney, 2022
 
-- name: Thomas Jones
-  photo: thomas.png
-  info: Research Assistant
-  email: Thomas.Jones@uon.edu.au
-  number_educ: 1
-  education1: Final year student, The University of Newcastle
+# - name: Thomas Jones
+#   photo: thomas.png
+#   info: Research Assistant
+#   email: Thomas.Jones@uon.edu.au
+#   number_educ: 1
+#   education1: Final year student, The University of Newcastle
 
 - name: Xiangke Lan #(蘭祥珂)
   photo: xiangke.jpg
@@ -61,12 +83,12 @@
   education1: MSc, The Hong Kong Polytechnic University, 2020
   education2: B.Eng, Nanjing University of Aeronautics and Astronautics, 2019
 
-- name: Mughees Ahmad
-  photo: Mughees.jpeg
-  info: Student Assistant
-  email: mughees.ahmad@connect.polyu.hk
-  number_educ: 1
-  education1: Year 4, The Hong Kong Polytechnic University
+# - name: Mughees Ahmad
+#   photo: Mughees.jpeg
+#   info: Student Assistant
+#   email: mughees.ahmad@connect.polyu.hk
+#   number_educ: 1
+#   education1: Year 4, The Hong Kong Polytechnic University
   
 # - name: Yurong Feng (馮毓榕)
 #   photo: fengyurong.jpg
