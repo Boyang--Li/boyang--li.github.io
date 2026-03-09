@@ -7,7 +7,7 @@ permalink: /publications/
 ---
 
 # Publications
-**Please visit my [Google Scholar](https://scholar.google.com.hk/citations?user=a-W1DTIAAAAJ) or [ORCiD](https://orcid.org/0000-0002-6900-0901) for a full list**
+**Please visit my [Google Scholar](https://scholar.google.com/citations?user=a-W1DTIAAAAJ) or [ORCiD](https://orcid.org/0000-0002-6900-0901) for a full list**
 
 ### Research Highlights
 
@@ -30,6 +30,12 @@ permalink: /publications/
   <p><strong><a href="{{ publi.link.url }}">{{ publi.link.display }}</a></strong></p>
   <p class="text-danger"><strong> {{ publi.news1 }}</strong></p>
   <p> {{ publi.news2 }}</p>
+  {% if publi.bibtex %}
+  <details>
+    <summary>BibTeX</summary>
+    <pre>{{ publi.bibtex }}</pre>
+  </details>
+  {% endif %}
  </div>
 </div>
 
@@ -49,12 +55,14 @@ permalink: /publications/
 
 <p> &nbsp; </p>
 
-<!-- 
-## Selected Publications
+### All Publications
 
-{% for publi in site.data.publist %}
-
-  {{ publi.title }} <br />
-  <em>{{ publi.authors }} </em><br /><a href="{{ publi.link.url }}">{{ publi.link.display }}</a>
-
-{% endfor %} -->
+{% assign grouped = site.data.publist | group_by: "year" | sort: "name" | reverse %}
+{% for group in grouped %}
+#### {{ group.name }}
+{% for publi in group.items %}
+- **{{ publi.title }}**<br>
+  *{{ publi.authors }}*<br>
+  [{{ publi.link.display }}]({{ publi.link.url }})
+{% endfor %}
+{% endfor %}
