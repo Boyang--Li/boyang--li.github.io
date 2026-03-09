@@ -1,49 +1,99 @@
 - title: Development of a Solar-Powered Unmanned Aerial Vehicle for Extended Flight Endurance
   image: solar.png
-  description: Drones 
+  description: A solar-powered fixed-wing UAV design achieving extended flight endurance through optimized energy harvesting and management.
   authors: Y. Chu; C. Ho; Y. Lee; B. Li*
+  year: 2021
   link:
     url: https://www.mdpi.com/2504-446X/5/2/44
-    display:  Drones (2021)
+    display: Drones (2021)
   highlight: 1
+  bibtex: |
+    @article{chu2021solar,
+      title={Development of a Solar-Powered Unmanned Aerial Vehicle for Extended Flight Endurance},
+      author={Chu, Y. and Ho, C. and Lee, Y. and Li, B.},
+      journal={Drones},
+      volume={5},
+      number={2},
+      pages={44},
+      year={2021},
+      publisher={MDPI}
+    }
 
 - title: Learning-Based Autonomous UAV System for Electrical and Mechanical (E&M) Device Inspection
   image: 2021-Sensors-Yurong.png
-  description: Sensors 
+  description: A learning-based autonomous UAV system combining deep learning and flight control for automated E&M device inspection.
   authors: Y. Feng; K. Tse; S. Chen; C.-Y. Wen; B. Li*
+  year: 2021
   link:
     url: https://www.mdpi.com/1424-8220/21/4/1385
-    display:  Sensors (2021)
+    display: Sensors (2021)
   highlight: 1
+  bibtex: |
+    @article{feng2021learning,
+      title={Learning-Based Autonomous {UAV} System for Electrical and Mechanical ({E\&M}) Device Inspection},
+      author={Feng, Y. and Tse, K. and Chen, S. and Wen, C.-Y. and Li, B.},
+      journal={Sensors},
+      volume={21},
+      number={4},
+      pages={1385},
+      year={2021},
+      publisher={MDPI}
+    }
 
 - title: System Identification and Control for a Tail-sitter Unmanned Aerial Vehicle in the Cruise Flight
-  description: IEEE Access
+  description: System identification techniques applied to tail-sitter UAV cruise flight dynamics for improved control design.
   authors: W. Zhou, S. Chen, C.-W. Chang, C.-Y. Wen, C.-K. Chen, and B. Li*
+  year: 2020
   link:
     url: https://ieeexplore.ieee.org/document/9279215
-    display:  Access (2020)
+    display: IEEE Access (2020)
   highlight: 0
 
 - title: An Actuator Allocation Method for a Variable-Pitch Propeller System of Quadrotor-based UAVs
   image: 2020-Sensors-Chingwei.jpg
-  description: Sensors
+  description: A novel actuator allocation method for variable-pitch propeller quadrotors enabling improved maneuverability and efficiency.
   authors: C.-W. Chang, S. Chen, C.-Y. Wen, and B. Li*
+  year: 2020
   link:
     url: https://www.mdpi.com/1424-8220/20/19/5651
-    display:  Sensors (2020)
+    display: Sensors (2020)
   highlight: 1
+  bibtex: |
+    @article{chang2020actuator,
+      title={An Actuator Allocation Method for a Variable-Pitch Propeller System of Quadrotor-based {UAVs}},
+      author={Chang, C.-W. and Chen, S. and Wen, C.-Y. and Li, B.},
+      journal={Sensors},
+      volume={20},
+      number={19},
+      pages={5651},
+      year={2020},
+      publisher={MDPI}
+    }
 
 - title: A Nonlinear Model Predictive Controller for Remotely Operated Underwater Vehicles With Disturbance Rejection
   image: rov.jpg
-  description: IEEE Access
+  description: A nonlinear MPC framework for ROV trajectory tracking with active disturbance rejection in underwater environments.
   authors: Y Cao, B Li, Q Li, AA Stokes, DM Ingram, A Kiprakis
+  year: 2020
   link:
     url: https://ieeexplore.ieee.org/abstract/document/9180253
-    display: Access (2020)
+    display: IEEE Access (2020)
   highlight: 1
+  bibtex: |
+    @article{cao2020nonlinear,
+      title={A Nonlinear Model Predictive Controller for Remotely Operated Underwater Vehicles With Disturbance Rejection},
+      author={Cao, Y. and Li, B. and Li, Q. and Stokes, A.A. and Ingram, D.M. and Kiprakis, A.},
+      journal={{IEEE} Access},
+      volume={8},
+      pages={158801--158820},
+      year={2020},
+      publisher={IEEE}
+    }
 
 - title: Numerical Modelling and Experimental Testing of the Hydrodynamic Characteristics for an Open-Frame Remotely Operated Vehicle
+  description: Numerical and experimental analysis of hydrodynamic forces acting on an open-frame ROV for improved motion prediction.
   authors: Q Li, Y Cao, B Li, DM Ingram, A Kiprakis
+  year: 2020
   link:
     url: https://www.mdpi.com/2077-1312/8/9/688
     display: JMSE (2020)
@@ -51,60 +101,111 @@
 
 - title: "An Optimal Transition Control Method for Tail-sitter VTOL UAVs"
   image: jiajia1.jpg
-  description: IEEE/ASME Transactions on Mechatronics
+  description: An optimal control method for smooth transition between hover and cruise flight modes in tail-sitter VTOL UAVs, validated through flight experiments.
   authors: B. Li, J. Sun, W. Zhou, C.Y. Wen, K.H. Low, C.K. Chen
+  year: 2020
   link:
     url: https://ieeexplore.ieee.org/abstract/document/9051852
-    display:  T-Mech (2020)
+    display: T-Mech (2020)
   highlight: 1
+  bibtex: |
+    @article{li2020optimal,
+      title={An Optimal Transition Control Method for Tail-sitter {VTOL UAVs}},
+      author={Li, B. and Sun, J. and Zhou, W. and Wen, C.Y. and Low, K.H. and Chen, C.K.},
+      journal={{IEEE/ASME} Transactions on Mechatronics},
+      volume={25},
+      number={5},
+      pages={2534--2545},
+      year={2020},
+      publisher={IEEE}
+    }
 
 - title: "Model-Aided Wind Estimation Method for a Tail-Sitter Aircraft"
   image: 2019-TAE-Jingxuan.jpg
-  description: IEEE Transactions on Aerospace and Electronic Systems
+  description: A model-aided approach fusing aerodynamic models with onboard sensor data for accurate in-flight wind estimation on tail-sitter UAVs.
   authors: J. Sun, B. Li, C.Y. Wen, C.K. Chen
+  year: 2020
   link:
     url: https://ieeexplore.ieee.org/abstract/document/8765354
-    display:  T-AES (2020)
+    display: T-AES (2020)
   highlight: 1
+  bibtex: |
+    @article{sun2020wind,
+      title={Model-Aided Wind Estimation Method for a Tail-Sitter Aircraft},
+      author={Sun, J. and Li, B. and Wen, C.Y. and Chen, C.K.},
+      journal={{IEEE} Transactions on Aerospace and Electronic Systems},
+      volume={56},
+      number={2},
+      pages={1262--1278},
+      year={2020},
+      publisher={IEEE}
+    }
 
 - title: Adaptive Model Predictive Control Method for a Tail-Sitter VTOL UAV
-  description:
+  description: An adaptive MPC scheme that updates aerodynamic model parameters online to improve control performance across flight regimes.
   authors: W. Zhou, B. Li, J. Sun, C.Y. Wen, C.K. Chen
+  year: 2019
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0967066119301340
     display: CEP (2019)
   highlight: 0
 
 - title: Design and Implementation of a Real-time Hardware-in-the-loop Testing Platform for a Dual-rotor Tail-sitter Unmanned Aerial Vehicle
-  description:
+  description: A real-time HIL simulation platform enabling safe and repeatable testing of flight control algorithms for tail-sitter UAVs.
   authors: J. Sun, B. Li, C.-Y. Wen, C.-K. Chen
+  year: 2018
   link:
     url: https://www.sciencedirect.com/science/article/pii/S0957415818301521
     display: Mechatronics (2018)
   highlight: 0
 
 - title: Development of Model Predictive Controller for a Tail-Sitter VTOL UAV in Hover Flight
-  description:
+  description: Design and implementation of a model predictive controller for stable hover flight of a dual-rotor tail-sitter UAV.
   authors: B. Li, W. Zhou, J. Sun, C. Y. Wen, C. K. Chen
+  year: 2018
   link:
-    url: https://www.sciencedirect.com/science/article/pii/S0967066119301340
+    url: https://www.mdpi.com/1424-8220/18/9/2752
     display: Sensors (2018)
   highlight: 0
 
 - title: A Camera-Based Target Detection and Positioning UAV System for Search and Rescue (SAR) Purposes
   image: strike2.jpg
-  description: Sensors
+  description: A vision-based UAV system for real-time target detection and geo-positioning to support search and rescue operations.
   authors: J. Sun, B. Li, Y. Jiang, C. Y. Wen
+  year: 2016
   link:
-    url: https://www.mdpi.com/162716
-    display: Sensors (2018)
+    url: https://www.mdpi.com/1424-8220/16/11/1778
+    display: Sensors (2016)
   highlight: 1
+  bibtex: |
+    @article{sun2016camera,
+      title={A Camera-Based Target Detection and Positioning {UAV} System for Search and Rescue ({SAR}) Purposes},
+      author={Sun, J. and Li, B. and Jiang, Y. and Wen, C.-Y.},
+      journal={Sensors},
+      volume={16},
+      number={11},
+      pages={1778},
+      year={2016},
+      publisher={MDPI}
+    }
 
-- title: Development and Testing of a Two-UAV Communication Relay System,
+- title: Development and Testing of a Two-UAV Communication Relay System
   image: momson.png
-  description: Sensors
+  description: Design and field testing of a dual-UAV relay system that extends wireless communication range for ground operations.
   authors: B. Li, Y. Jiang, J. Sun, L. Cai, C. Y. Wen
+  year: 2016
   link:
     url: https://www.mdpi.com/1424-8220/16/10/1696
-    display: Sensors (2018)
+    display: Sensors (2016)
   highlight: 1
+  bibtex: |
+    @article{li2016relay,
+      title={Development and Testing of a Two-{UAV} Communication Relay System},
+      author={Li, B. and Jiang, Y. and Sun, J. and Cai, L. and Wen, C.-Y.},
+      journal={Sensors},
+      volume={16},
+      number={10},
+      pages={1696},
+      year={2016},
+      publisher={MDPI}
+    }
